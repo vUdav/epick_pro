@@ -1,0 +1,26 @@
+.main-nav {
+	&__hamburger {
+		width: 29px;
+		height: 24px;
+		background: url(../img/burger.png);
+		position: absolute;
+		top: 31px;
+		right: 15px;
+	}
+	&__list {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+	}
+	&__item {
+		a {
+			text-transform: uppercase;
+			color: @orange-color;
+			&:hover {
+				color: @orange-color--darken;
+				text-decoration: none;
+			}
+		}
+	}
+}

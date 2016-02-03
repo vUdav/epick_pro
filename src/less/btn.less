@@ -1,0 +1,25 @@
+.btn {
+	display: inline-block;
+	line-height: @btn-line-height;
+	background-color: @btn-bg;
+	text-align: center;
+	color: @btn-text-color;
+	text-transform: uppercase;
+	font-size: @btn-font-size;
+	border-radius: @btn-border-radius;
+	&:hover {
+		background-color: @btn-bg--hover;
+		text-decoration: none;
+		color: @btn-text-color;
+	}
+	&--calendar-icon:before {
+		content: "";
+		display: inline-block;
+		width: 15px;
+		height: 16px;
+		background: url(../img/calendar-icon.png);
+		margin-right: 9px;
+		position: relative;
+		top: 2px;
+	}
+}
