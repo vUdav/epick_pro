@@ -7,6 +7,7 @@
 	text-transform: uppercase;
 	font-size: @btn-font-size;
 	border-radius: @btn-border-radius;
+	padding: 0 28px;
 	&:hover {
 		background-color: @btn-bg--hover;
 		text-decoration: none;
@@ -21,5 +22,14 @@
 		margin-right: 9px;
 		position: relative;
 		top: 2px;
+	}
+	&--bordered {
+		background-color: transparent;
+		border: @btn-border--bordered;
+		&:hover {
+			background-color: transparent;
+			color: @btn-color--bordered-hover;
+			border-color: @btn-color--bordered-hover;
+		}
 	}
 }
