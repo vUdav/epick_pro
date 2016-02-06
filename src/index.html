@@ -8,25 +8,7 @@
 </head>
 <body>
 
-	<header class="page-header">
-		<div class="page-header__inner container">
-			<div class="row">
-				<a href="#" class="logo col-xs-12 col-md-2"><img src="img/logo.png"></a>
-				<nav class="main-nav col-md-5">
-					<span id="menu-trigger" class="main-nav__hamburger visible-xs visible-sm"></span>
-					<ul class="main-nav__list hidden-xs hidden-sm">
-						<li class="main-nav__item"><a href="" class="main-nav__link">Номера</a></li>
-						<li class="main-nav__item"><a href="" class="main-nav__link">Коттедж</a></li>
-						<li class="main-nav__item"><a href="" class="main-nav__link">Ресторан</a></li>
-						<li class="main-nav__item"><a href="" class="main-nav__link">Отдых</a></li>
-						<li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a></li>
-					</ul>
-				</nav>
-				<div class="page-header__contacts hidden-xs hidden-sm col-md-3"><strong>+7 812 777-55-88</strong><small>г. Санкт-Петербург, Приморское ш.600</small></div>
-				<a href="#" class="btn btn--calendar-icon hidden-xs hidden-sm col-md-2">Забронировать</a>
-			</div>
-		</div>
-	</header>
+	@@include('_html_include/header.html')
 
 	<section class="promo">
 		<div class="promo__wrapper-slides">
@@ -163,20 +145,7 @@
 		</div>
 	</section>
 
-	<footer class="page-footer container">
-		<div class="page-footer__inner row">
-			<div class="page-footer__address hidden-xs col-sm-3">г. Санкт-Петербург,<br>Приморское ш.600</div>
-			<div class="page-footer__logo-socials col-xs-12 col-sm-6">
-				<a href="#" class="logo"><img src="img/logo.png"></a>
-				<ul class="page-footer__socials">
-					<li class="page-footer__social-item"><a href="#" class="page-footer__social-link  page-footer__social-link--vk"></a></li>
-					<li class="page-footer__social-item"><a href="#" class="page-footer__social-link  page-footer__social-link--inst"></a></li>
-					<li class="page-footer__social-item"><a href="#" class="page-footer__social-link  page-footer__social-link--fb"></a></li>
-				</ul>
-			</div>
-			<div class="page-footer__contacts hidden-xs col-sm-3">+7 812 777-55-88<br><a href="mailto:info@greenvalley.ru">info@greenvalley.ru</a></div>
-		</div>
-	</footer>
+	@@include('_html_include/footer.html')
 
 </body>
 </html>

@@ -89,6 +89,8 @@ module.exports = function(grunt) {
         src: '*.html',
         // куда писать результат обработки
         dest: 'build/',
+        // откуда инклюдить файлы
+        includesDir: '_html_include/'
       }
     },
 
