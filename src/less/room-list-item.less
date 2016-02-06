@@ -1,0 +1,68 @@
+.room-list-item {
+	background-color: #fafafa;
+	border: 1px solid #ebebeb;
+	margin-bottom: 50px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	@media (min-width: @screen-md) {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&__title {
+		font-family: @font-family;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 24px;
+		margin-bottom: 28px;
+		span {
+			color: @orange-color;
+			font-size: 18px;
+		}
+		strong {
+			font-family: @font-family-h;
+			display: block;
+			font-size: 26px;
+			font-weight: 400;
+			line-height: 19px;
+			margin-bottom: 11px;
+		}
+	}
+	&__img {
+		margin-bottom: 41px;
+		text-align: center;
+	}
+	&__img-md {
+		padding-right: 0;
+	}
+	&__btn {
+		margin-top: 30px;
+		text-align: center;
+		.btn {
+			margin-bottom: 26px;
+			&:last-child {
+				margin-bottom: 0;
+				margin-right: 0;
+			}
+			@media (min-width: @screen-sm) {
+				margin-right: 68px;
+			}
+		}
+		@media (min-width: @screen-md) {
+			text-align: left;
+		}
+	}
+	&__content {
+		@media (min-width: @screen-md) {
+			padding-top: 40px;
+			padding-left: 110px;
+			padding-right: 110px;
+		}
+	}
+	&__text {
+		padding: 0;
+	}
+}
