@@ -9,7 +9,7 @@
 		<section class="booking-step  booking-step--gray">
 			<span class="booking-step__step-count">Шаг 1</span>
 			<h2 class="booking-step__title">Дата отдыха</h2>
-			<div class="booking-step__inner  booking-step__inner--narrow container">
+			<div class="booking-form__date-inner  booking-form__date-inner--narrow  booking-form__date-inner--bordered container">
 				<div class="row">
 					<div class="booking-form__date col-xs-12 col-sm-6">
 						<label>
@@ -38,20 +38,22 @@
 		<section class="booking-step">
 			<span class="booking-step__step-count">Шаг 2</span>
 			<h2 class="booking-step__title">Место проживания</h2>
-			<div class="booking-step__inner  boking-step__inner--narrow">
-				<div class="booking-form__location">
-					<label>
-						<input type="radio" name="location" value="Отель" checked>
-						<h3 class="booking-form__location-title">Отель</h3>
-						<i class="booking-form__icon-hotel"></i>
-					</label>
-				</div>
-				<div class="booking-form__location">
-					<label>
-						<input type="radio" name="location" value="Коттедж">
-						<h3 class="booking-form__location-title">Коттедж</h3>
-						<i class="booking-form__icon-cottage"></i>
-					</label>
+			<div class="booking-form__location-inner  booking-form__location-inner--narrow  booking-form__location-inner--bordered container">
+				<div class="row">
+					<div class="booking-form__location col-xs-6">
+						<input type="radio" name="location" value="Отель" id="booking-form__location-hotel">
+						<label for="booking-form__location-hotel" class="booking-form__location-hotel">
+							<h3 class="booking-form__location-title">Отель</h3>
+							<i class="booking-form__location booking-form__location-hotel--icon"></i>
+						</label>
+					</div>
+					<div class="booking-form__location col-xs-6">
+						<input type="radio" name="location" value="Коттедж" id="booking-form__location-cottage" checked>
+						<label for="booking-form__location-cottage" class="booking-form__location-cottage">
+							<h3 class="booking-form__location-title">Коттедж</h3>
+							<i class="booking-form__location booking-form__location-cottage--icon"></i>
+						</label>
+					</div>
 				</div>
 			</div>
 		</section>

@@ -23,6 +23,37 @@
 			}
 		}
 	}
+	&__date-inner, &__location-inner {
+		margin-top: 36px;
+		@media (min-width: @screen-md) {
+			background-color: #fff;
+			padding-top: 29px;
+			padding-bottom: 29px;
+		}
+		&--bordered {
+			@media (min-width: @screen-md) {
+				border: 1px solid #ebebeb;
+			}
+		}
+		&--narrow {
+			@media (min-width: @screen-sm) {
+				width: 380px !important;
+			}
+		}
+	}
+	&__location-inner {
+		padding-top: 29px;
+		padding-bottom: 29px;
+		margin-left: 15px;
+		margin-right: 15px;
+		@media (min-width: @screen-sm) {
+			margin: 0 auto;
+			margin-top: 36px;
+		}
+		&--bordered {
+			border: 1px solid #ebebeb;
+		}
+	}
 	&__date-wrapper {
 		border: 1px solid #ebebeb;
 		height: 50px;
@@ -58,6 +89,78 @@
 		}
 		input[name=entry-year], input[name=exit-year] {
 			flex-grow: 2;
+		}
+	}
+	&__location {
+		text-align: center;
+		border-right: 1px solid #ebebeb;
+		&:last-child {
+			border-right: 0;
+		}
+		input[type=radio] {
+			display: none;
+		}
+	}
+	&__location-title {
+		font-family: @font-family-sans-serif;
+		color: #4c4c4c;
+		font-size: 14px;
+		line-height: 18px;
+		text-transform: uppercase;
+		margin-bottom: 14px;
+	}
+	&__location-hotel {
+		cursor: pointer;
+		&--icon {
+			content: "";
+			display: block;
+			width: 82px;
+			height: 64px;
+			background: url(../img/icon-hotel.png);
+			margin: 0 auto;
+			margin-bottom: 15px;
+			opacity: .4;
+			transition: .2s opacity;
+		}
+		&:after {
+			content: "";
+			display: block;
+			width: 16px;
+			height: 12px;
+			margin: 0 auto;
+			background: url(../img/icon-check.png);
+			opacity: 0;
+			transition: .2s opacity;
+		}
+		input:checked + &:after, input:checked + & &--icon, &:hover &--icon {
+			opacity: 1;
+		}
+	}
+	&__location-cottage {
+		cursor: pointer;
+		&--icon {
+			content: "";
+			display: block;
+			width: 82px;
+			height: 64px;
+			background: url(../img/icon-cottage.png);
+			margin: 0 auto;
+			margin-bottom: 15px;
+			opacity: .4;
+			transition: .2s opacity;
+		}
+		&:after {
+			content: "";
+			display: block;
+			width: 16px;
+			height: 12px;
+			margin: 0 auto;
+			background: url(../img/icon-check.png);
+			opacity: 0;
+			transition: .2s opacity;
+		}
+		input:checked + &:after, input:checked + & &--icon, &:hover &--icon {
+			opacity: 1;
 		}
 	}
 }
