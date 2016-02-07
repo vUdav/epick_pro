@@ -1663,6 +1663,21 @@ p {
 	height: 100%;
 }
 
+.booking-top {
+	padding-top: 74px;
+	padding-bottom: 46px;
+	text-align: center;
+}
+
+.booking-top h1 {
+	font-size: 30px;
+	margin-bottom: 26px;
+}
+
+.booking-top span {
+	color: #ff7435;
+}
+
 @media (min-width: 768px) {
 
 .container {
@@ -1977,6 +1992,10 @@ p {
 
 .single-room-other-category__card {
 	margin-bottom: 0;
+}
+
+.booking-top {
+	width: 400px;
 }
 
 }
@@ -2556,6 +2575,10 @@ td.visible-lg {
 	-webkit-order: 1;
 	-ms-flex-order: 1;
 	order: 1;
+}
+
+.booking-top {
+	width: 400px;
 }
 
 }
