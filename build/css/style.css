@@ -2092,9 +2092,6 @@ p {
 
 .booking-form__date {
 	display: inline-block;
-}
-
-.booking-form__date {
 	margin-top: 0;
 }
 
@@ -2688,8 +2685,17 @@ td.visible-lg {
 .booking-step__inner {
 	background-color: #fff;
 	padding-top: 29px;
-	padding-bottom: 54px;
+	padding-bottom: 29px;
 	border: 1px solid #ebebeb;
+}
+
+.booking-form__date {
+	border-right: 1px solid #ebebeb;
+	padding-bottom: 20px;
+}
+
+.booking-form__date:last-child {
+	border-right: 0;
 }
 
 .booking-form__date-wrapper {
