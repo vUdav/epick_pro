@@ -1,34 +1,14 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>Single room</title>
-</head>
-<body>
+@@include('_html_include/header.html', {"title": "Single room"})
 
-	<header class="page-header">
-		<div class="page-header__inner">
-			<a href="" class="logo"><img src="" alt=""></a>
-			<nav class="main-nav">
-				<span id="menu-trigger" class="main-nav__hamburger"></span>
-				<ul class="main-nav__list">
-					<li class="main-nav__item"><a href="" class="main-nav__link">Номера</a></li>
-					<li class="main-nav__item"><a href="" class="main-nav__link">Коттедж</a></li>
-					<li class="main-nav__item"><a href="" class="main-nav__link">Ресторан</a></li>
-					<li class="main-nav__item"><a href="" class="main-nav__link">Отдых</a></li>
-					<li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a></li>
-				</ul>
-			</nav>
-			<div class="page-header__contacts"><strong>+7 812 777-55-88</strong>г. Санкт-Петербург, Приморское ш.600</div>
-			<a href="" class="btn btn--icon-calendar">Забронировать</a>
-		</div>
-	</header>
-
-	<article class="single-room-card">
-		<div class="single-room-card__inner">
+	<article class="single-room-card container">
+		<div class="single-room-card__inner row">
 			<h1 class="single-room-card__title"><strong>Эконом</strong>от <span>3400</span> руб./сутки</h1>
 			<div class="single-room-card__content">
-				<div class="single-room-card__description">
+				<div class="single-room-card__slider col-md-6">
+					<div class="single-room-card__slide"><img src="img/single-room-slide1.jpg"></div>
+					<!-- <div class="single-room-card__slide"><img src="" alt=""></div> -->
+				</div>
+				<div class="single-room-card__description col-xs-12 col-md-6">
 					<div class="single-room-card__about">
 						<h2 class="single-room-card__content-title">О номере</h2>
 						<p>В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны на проживание 1-2 человек. Часть номеров с видом на Финский залив.</p>
@@ -55,10 +35,9 @@
 						</ul>
 					</div>
 				</div>
-				<div class="single-room-card__slider"></div>
 			</div>
 		</div>
-		<a href="" class="btn btn--icon-calendar">Забронировать</a>
+		<div class="single-room-card__btn"><a href="" class="btn btn--calendar-icon">Забронировать</a></div>
 		<p class="single-room-card__price">от <span>3400</span> руб./сутки</p>
 	</article>
 
@@ -79,20 +58,4 @@
 		</div>
 	</section>
 
-	<footer class="page-footer">
-		<div class="page-footer__inner">
-			<div class="page-footer__address">г. Санкт-Петербург,<br>Приморское ш.600</div>
-			<div class="page-footer__logo-socials">
-				<div class="page-footer__logo"></div>
-				<ul class="page-footer__socials">
-					<li class="page-footer__social-item"><a href="" class="page-footer__social-link  page-footer__social-link--vk-icon"></a></li>
-					<li class="page-footer__social-item"><a href="" class="page-footer__social-link  page-footer__social-link--inst-icon"></a></li>
-					<li class="page-footer__social-item"><a href="" class="page-footer__social-link  page-footer__social-link--fb-icon"></a></li>
-				</ul>
-			</div>
-			<div class="page-footer__contacts">+7 812 777-55-88<br><a href="mailto:info@greenvalley.ru">info@greenvalley.ru</a></div>
-		</div>
-	</footer>
-
-</body>
-</html>
+@@include('_html_include/footer.html')

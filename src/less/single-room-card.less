@@ -1,0 +1,104 @@
+.single-room-card {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	&__content {
+		@media (min-width: @screen-md) {
+			display: inline-flex;
+		}
+	}
+	&__title {
+		font-family: @font-family-sans-serif;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 24px;
+		text-align: center;
+		margin-bottom: 29px;
+		text-transform: uppercase;
+		@media (min-width: @screen-sm) {
+			margin-bottom: 48px;
+		}
+		span {
+			color: @orange-color;
+			font-size: 18px;
+		}
+		strong {
+			font-family: @font-family-h;
+			display: block;
+			font-size: 30px;
+			text-align: center;
+			margin-bottom: 18px;
+			font-weight: 400;
+			text-transform: none;
+		}
+	}
+	&__slider {
+		@media (min-width: @screen-md) {
+			padding: 0 15px;
+			order: 2;
+		}
+	}
+	&__description {
+		padding-top: 50px;
+		padding-bottom: 45px;
+		@media (min-width: @screen-md) {
+			padding-top: 0;
+		}
+		@media (min-width: @screen-md) {
+			order: 1;
+		}
+	}
+	&__about {
+		margin-bottom: 35px;
+	}
+	&__comfort {
+		margin-bottom: 45px;
+	}
+	&__content-title {
+		font-size: 26px;
+		font-weight: 400;
+		line-height: 19px;
+		margin-bottom: 25px;
+	}
+	&__comfort-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		@media (min-width: @screen-sm) {
+			columns: 2;
+		}
+		li:before {
+			content: ">";
+			display: inline;
+			color: @orange-color;
+			margin-right: 5px;
+		}
+	}
+	&__addition-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li:before {
+			content: ">";
+			display: inline;
+			color: @orange-color;
+			margin-right: 5px;
+		}
+	}
+	&__btn {
+		text-align: center;
+		margin-bottom: 19px;
+	}
+	&__price {
+		text-align: center;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 24px;
+		margin-bottom: 29px;
+		text-transform: uppercase;
+		margin-bottom: 0;
+		span {
+			color: @orange-color;
+			font-size: 18px;
+		}
+	}
+}
