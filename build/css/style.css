@@ -1703,8 +1703,17 @@ p {
 	background-color: #f1f1f1;
 }
 
-.booking-step__inner--narrow {
-	width: 380px !important;
+.booking-form__date {
+	margin-top: 36px;
+}
+
+.booking-form__date label {
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 18px;
+	margin-bottom: 17px;
+	text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -2025,6 +2034,10 @@ p {
 
 .booking-top {
 	width: 400px;
+}
+
+.booking-step__inner--narrow {
+	width: 380px !important;
 }
 
 }

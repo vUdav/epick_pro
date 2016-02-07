@@ -19,6 +19,8 @@
 		background-color: #f1f1f1;
 	}
 	&__inner--narrow {
-		width: 380px !important;
+		@media (min-width: @screen-sm) {
+			width: 380px !important;
+		}
 	}
 }
