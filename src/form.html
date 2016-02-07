@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+</head>
+<body>
+
+	<header class="page-header">
+		<div class="page-header__inner">
+			<a href="" class="logo"><img src="" alt=""></a>
+			<nav class="main-nav">
+				<span id="menu-trigger" class="main-nav__hamburger"></span>
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a href="" class="main-nav__link">Номера</a></li>
+					<li class="main-nav__item"><a href="" class="main-nav__link">Коттедж</a></li>
+					<li class="main-nav__item"><a href="" class="main-nav__link">Ресторан</a></li>
+					<li class="main-nav__item"><a href="" class="main-nav__link">Отдых</a></li>
+					<li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="page-header__contacts"><strong>+7 812 777-55-88</strong>г. Санкт-Петербург, Приморское ш.600</div>
+			<a href="" class="btn btn--icon-calendar">Забронировать</a>
+		</div>
+	</header>
+
+	<section class="booking-top">
+		<h1>Бронирование</h1>
+		<p>Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону: <span>+7 812 777-55-88</span></p>
+	</section>
+
+	<form action="#" class="booking-form">
+		<section class="booking-step  booking-step--grey  booking-step--pb100">
+			<span class="booking-step__step-count">Шаг 1</span>
+			<h2 class="booking-step__title">Дата отдыха</h2>
+			<div class="booking-step__inner  boking-step__inner--w380">
+				<div class="booking-step__date">
+					<label>
+						<h3 class="booking-step__date-title">Дата въезда</h3>
+						<input type="number" placeholder="дд" max="31" maxlength="2" value="entry-day">
+						<input type="number" placeholder="мм" max="12" maxlength="2" value="entry-month">
+						<input type="number" placeholder="гггг" max="2020" maxlength="4" value="entry-year">
+					</label>
+				</div>
+				<div class="booking-step__date">
+					<label>
+						<h3 class="booking-step__date-title">Дата выезда</h3>
+						<input type="number" placeholder="дд" max="31" maxlength="2" value="exit-day">
+						<input type="number" placeholder="мм" max="12" maxlength="2" value="exit-month">
+						<input type="number" placeholder="гггг" max="2020" maxlength="4" value="exit-year">
+					</label>
+				</div>
+			</div>
+		</section>
+
+		<section class="booking-step">
+			<span class="booking-step__step-count">Шаг 2</span>
+			<h2 class="booking-step__title">Место проживания</h2>
+			<div class="booking-step__inner  boking-step__inner--w380">
+				<div class="booking-step__location">
+					<label>
+						<input type="radio" name="location" value="Отель" checked>
+						<h3 class="booking-step__location-title">Отель</h3>
+						<i class="booking-step__icon-hotel"></i>
+					</label>
+				</div>
+				<div class="booking-step__location">
+					<label>
+						<input type="radio" name="location" value="Коттедж">
+						<h3 class="booking-step__location-title">Коттедж</h3>
+						<i class="booking-step__icon-cottage"></i>
+					</label>
+				</div>
+			</div>
+		</section>
+
+		<section class="booking-step booking-step--grey">
+			<span class="booking-step__step-count">Шаг 3</span>
+			<h2 class="booking-step__title">Тип коттеджа</h2>
+			<div class="booking-step__inner">
+				<div class="booking-step__location-type-list">
+					<label><input type="radio" value="Флагман" name="cottage-type">Флагман<i class="booking-step__icon-check  booking-step__icon-check--active"></i></label>
+					<label><input type="radio" value="Озёрный" name="cottage-type">Озёрный<i class="booking-step__icon-check"></i></label>
+					<label><input type="radio" value="Ольховка" name="cottage-type">Ольховка<i class="booking-step__icon-check"></i></label>
+					<label><input type="radio" value="Портовый" name="cottage-type">Портовый<i class="booking-step__icon-check"></i></label>
+				</div>
+				<div class="booking-step__location-features">
+					<ul class="booking-step__location-features-list  booking-step__location-features-list--active">
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-area"></i>Площадь<br>100м2</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-room"></i>3 комнаты</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-bed"></i>5 спальных<br>мест</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-bath"></i>Раздельный<br>санузел</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-wifi"></i>WI-FI</li>
+					</ul>
+					<ul class="booking-step__location-features-list">
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-area"></i>Площадь<br>100м2</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-room"></i>3 комнаты</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-bed"></i>5 спальных<br>мест</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-bath"></i>Раздельный<br>санузел</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-wifi"></i>WI-FI</li>
+					</ul>
+					<ul class="booking-step__location-features-list">
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-area"></i>Площадь<br>100м2</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-room"></i>3 комнаты</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-bed"></i>5 спальных<br>мест</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-bath"></i>Раздельный<br>санузел</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-wifi"></i>WI-FI</li>
+					</ul>
+					<ul class="booking-step__location-features-list">
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-area"></i>Площадь<br>100м2</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-room"></i>3 комнаты</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-bed"></i>5 спальных<br>мест</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-bath"></i>Раздельный<br>санузел</li>
+						<li class="booking-step__location-features-item"><i class="booking-step__icon-wifi"></i>WI-FI</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="booking-step">
+			<span class="booking-step__step-count">Шаг 4</span>
+			<h2 class="booking-step__title">Персональная информация</h2>
+			<div class="booking-step__inner">
+				<div class="booking-step__personal-information"><input type="text" name="name" placeholder="Имя"></div>
+				<div class="booking-step__personal-information"><input type="text" name="lastname" placeholder="Фамилия"></div>
+				<div class="booking-step__personal-information"><input type="tel" name="tel" placeholder="Номер телефона"><p>Мы свяжемся с вами в случае необходимости.</p></div>
+				<div class="booking-step__personal-information"><input type="email" name="email" placeholder="E-mail"><p>На этот адрес мы вышлем вам подтверждение о забронированном номере.</p></div>
+			</div>
+		</section>
+
+		<section class="booking-step booking-step--grey">
+			<span class="booking-step__step-count">Шаг 5</span>
+			<h2 class="booking-step__title">Способ оплаты</h2>
+			<div class="booking-step__inner">
+				<div class="booking-step__payment-result">
+					<h3>К оплате</h3>
+					<strong>-</strong>
+					<p class="booking-step__payment-result-notification booking-step__payment-result-notification--active">Пожалуйста, выберите дату въезда и выезда, чтобы увидеть сумму к оплате</p>
+				</div>
+				<div class="booking-step__payment-method">
+					<div class="booking-step__payment-method-item">
+						<label>
+							<input type="radio" name="payment-method" value="">
+							<i class="__icon-check __icon-check--disable"></i>
+							<strong>По приезду</strong>
+							<p>Вы можете произвести оплату по факту заселения.</p>
+						</label>
+					</div>
+					<div class="booking-step__payment-method-item">
+						<label>
+							<input type="radio" name="payment-method" value="">
+							<i class="__icon-check"></i>
+							<strong>Сейчас</strong>
+							<p>Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+						</label>
+						<div class="booking-step__payment-method-input-inner"><label>Номер карты<input type="number" name="card-number" placeholder="0000-0000-0000-0000"></label></div>
+						<div class="booking-step__payment-method-input-inner"><label>Код CvV<input type="number" name="card-cvv" maxlength="3" placeholder="123"><a href="#" class="tooltip"><span class="tooltip__text">Поясняющий текст</span></a></label></div>
+						<div class="booking-step__payment-method-input-inner"><label>Фамилия владельца карты<input type="text" name="card-name" placeholder="Vladimir Vladimirov"></label></div>
+						<div class="booking-step__payment-method-input-inner"><label>Действует до<input type="text" name="card-date" placeholder="01 / 2018"></label></div>
+					</div>
+				</div>
+				<button class="btn btn--green">Забронировать</button>
+			</div>
+		</section>
+	</form>
+
+	<footer class="page-footer">
+		<div class="page-footer__inner">
+			<div class="page-footer__address">г. Санкт-Петербург,<br>Приморское ш.600</div>
+			<div class="page-footer__logo-socials">
+				<div class="page-footer__logo"></div>
+				<ul class="page-footer__socials">
+					<li class="page-footer__social-item"><a href="" class="page-footer__social-link  page-footer__social-link--vk-icon"></a></li>
+					<li class="page-footer__social-item"><a href="" class="page-footer__social-link  page-footer__social-link--inst-icon"></a></li>
+					<li class="page-footer__social-item"><a href="" class="page-footer__social-link  page-footer__social-link--fb-icon"></a></li>
+				</ul>
+			</div>
+			<div class="page-footer__contacts">+7 812 777-55-88<br><a href="mailto:info@greenvalley.ru">info@greenvalley.ru</a></div>
+		</div>
+	</footer>
+
+</body>
+</html>
