@@ -950,7 +950,7 @@ p {
 
 .btn {
 	display: inline-block;
-	line-height: 37px;
+	line-height: 34px;
 	background-color: #ff7435;
 	text-align: center;
 	color: #fff;
@@ -958,6 +958,7 @@ p {
 	font-size: 14px;
 	border-radius: 20px;
 	padding: 0 28px;
+	padding-top: 3px;
 }
 
 .btn:hover {
@@ -996,6 +997,7 @@ p {
 	padding: 0;
 	border-bottom: 1px dashed;
 	border-radius: 0;
+	padding-top: 0;
 }
 
 .btn--more:hover {
