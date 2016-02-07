@@ -1678,6 +1678,35 @@ p {
 	color: #ff7435;
 }
 
+.booking-step {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.booking-step__step-count {
+	color: #929292;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+	margin-bottom: 14px;
+	line-height: 1;
+}
+
+.booking-step__title {
+	font-size: 26px;
+	text-align: center;
+	line-height: 19px;
+}
+
+.booking-step--gray {
+	background-color: #f1f1f1;
+}
+
+.booking-step__inner--narrow {
+	width: 380px !important;
+}
+
 @media (min-width: 768px) {
 
 .container {

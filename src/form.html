@@ -6,22 +6,22 @@
 	</section>
 
 	<form action="#" class="booking-form">
-		<section class="booking-step  booking-step--grey  booking-step--pb100">
-			<h3 class="booking-step__step-count">Шаг 1</h3>
+		<section class="booking-step  booking-step--gray">
+			<span class="booking-step__step-count">Шаг 1</span>
 			<h2 class="booking-step__title">Дата отдыха</h2>
-			<div class="booking-step__inner  boking-step__inner--w380">
-				<div class="booking-step__date">
+			<div class="booking-step__inner  booking-step__inner--narrow container">
+				<div class="booking-form__date">
 					<label>
-						<h3 class="booking-step__date-title">Дата въезда</h3>
-						<input type="number" placeholder="дд" max="31" maxlength="2" value="entry-day">
+						<label for="entry-day">Дата въезда</label>
+						<input type="number" placeholder="дд" max="31" maxlength="2" value="entry-day" id="entry-day">
 						<input type="number" placeholder="мм" max="12" maxlength="2" value="entry-month">
 						<input type="number" placeholder="гггг" max="2020" maxlength="4" value="entry-year">
 					</label>
 				</div>
-				<div class="booking-step__date">
+				<div class="booking-form__date">
 					<label>
-						<h3 class="booking-step__date-title">Дата выезда</h3>
-						<input type="number" placeholder="дд" max="31" maxlength="2" value="exit-day">
+						<label for="exit-day">Дата выезда</label>
+						<input type="number" placeholder="дд" max="31" maxlength="2" value="exit-day" id="exit-day">
 						<input type="number" placeholder="мм" max="12" maxlength="2" value="exit-month">
 						<input type="number" placeholder="гггг" max="2020" maxlength="4" value="exit-year">
 					</label>
@@ -32,7 +32,7 @@
 		<section class="booking-step">
 			<span class="booking-step__step-count">Шаг 2</span>
 			<h2 class="booking-step__title">Место проживания</h2>
-			<div class="booking-step__inner  boking-step__inner--w380">
+			<div class="booking-step__inner  boking-step__inner--narrow">
 				<div class="booking-step__location">
 					<label>
 						<input type="radio" name="location" value="Отель" checked>
@@ -50,7 +50,7 @@
 			</div>
 		</section>
 
-		<section class="booking-step booking-step--grey">
+		<section class="booking-step booking-step--gray">
 			<span class="booking-step__step-count">Шаг 3</span>
 			<h2 class="booking-step__title">Тип коттеджа</h2>
 			<div class="booking-step__inner">
@@ -104,7 +104,7 @@
 			</div>
 		</section>
 
-		<section class="booking-step booking-step--grey">
+		<section class="booking-step booking-step--gray">
 			<span class="booking-step__step-count">Шаг 5</span>
 			<h2 class="booking-step__title">Способ оплаты</h2>
 			<div class="booking-step__inner">
