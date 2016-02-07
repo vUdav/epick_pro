@@ -1,12 +1,18 @@
 .promo {
 	&__wrapper-slides {
 		height: 321px;
+		@media (min-width: @screen-md) {
+			height: 431px;
+		}
 	}
 	&__slide {
 		background-size: cover;
 		background-position-x: 50%;
 		height: 100%;
 		padding-top: 19px;
+		@media (min-width: @screen-md) {
+			padding-top: 100px;
+		}
 	}
 	&__slide-title {
 		margin: 0;

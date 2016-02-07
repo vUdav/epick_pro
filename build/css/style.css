@@ -2738,6 +2738,14 @@ td.visible-lg {
 	position: static;
 }
 
+.promo__wrapper-slides {
+	height: 431px;
+}
+
+.promo__slide {
+	padding-top: 100px;
+}
+
 .offers__slide {
 	height: 335px;
 }
