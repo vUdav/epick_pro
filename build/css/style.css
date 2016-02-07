@@ -2748,6 +2748,10 @@ td.visible-lg {
 	padding-top: 100px;
 }
 
+.offers__title {
+	font-size: 30px;
+}
+
 .offers__slide {
 	height: 335px;
 }
