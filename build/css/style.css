@@ -1703,6 +1703,10 @@ p {
 	background-color: #f1f1f1;
 }
 
+.booking-step__inner {
+	margin-top: 36px;
+}
+
 .booking-form__date {
 	margin-top: 36px;
 }
@@ -1712,8 +1716,54 @@ p {
 	font-size: 14px;
 	text-transform: uppercase;
 	line-height: 18px;
-	margin-bottom: 17px;
 	text-align: center;
+}
+
+.booking-form__date:first-child {
+	margin-top: 0;
+}
+
+.booking-form__date-wrapper {
+	border: 1px solid #ebebeb;
+	height: 50px;
+	width: 180px;
+	margin: 0 auto;
+	margin-top: 17px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.booking-form__date-wrapper input {
+	width: 40px;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	text-align: center;
+	border: 0;
+	border-right: 1px solid #ebebeb;
+	color: #0ab89d;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.booking-form__date-wrapper input:last-child {
+	border-right: 0;
+}
+
+.booking-form__date-wrapper input[type=number]::-webkit-inner-spin-button,
+.booking-form__date-wrapper input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin: 0;
+}
+
+.booking-form__date-wrapper input[name=entry-year],
+.booking-form__date-wrapper input[name=exit-year] {
+	-webkit-flex-grow: 2;
+	-ms-flex-positive: 2;
+	flex-grow: 2;
 }
 
 @media (min-width: 768px) {
@@ -2038,6 +2088,18 @@ p {
 
 .booking-step__inner--narrow {
 	width: 380px !important;
+}
+
+.booking-form__date {
+	display: inline-block;
+}
+
+.booking-form__date {
+	margin-top: 0;
+}
+
+.booking-form__date-wrapper {
+	width: auto;
 }
 
 }
@@ -2621,6 +2683,17 @@ td.visible-lg {
 
 .booking-top {
 	width: 400px;
+}
+
+.booking-step__inner {
+	background-color: #fff;
+	padding-top: 29px;
+	padding-bottom: 54px;
+	border: 1px solid #ebebeb;
+}
+
+.booking-form__date-wrapper {
+	height: 27px;
 }
 
 }

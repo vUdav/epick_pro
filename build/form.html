@@ -38,21 +38,27 @@
 			<span class="booking-step__step-count">Шаг 1</span>
 			<h2 class="booking-step__title">Дата отдыха</h2>
 			<div class="booking-step__inner  booking-step__inner--narrow container">
-				<div class="booking-form__date">
-					<label>
-						<label for="entry-day">Дата въезда</label>
-						<input type="number" placeholder="дд" max="31" maxlength="2" value="entry-day" id="entry-day">
-						<input type="number" placeholder="мм" max="12" maxlength="2" value="entry-month">
-						<input type="number" placeholder="гггг" max="2020" maxlength="4" value="entry-year">
-					</label>
-				</div>
-				<div class="booking-form__date">
-					<label>
-						<label for="exit-day">Дата выезда</label>
-						<input type="number" placeholder="дд" max="31" maxlength="2" value="exit-day" id="exit-day">
-						<input type="number" placeholder="мм" max="12" maxlength="2" value="exit-month">
-						<input type="number" placeholder="гггг" max="2020" maxlength="4" value="exit-year">
-					</label>
+				<div class="row">
+					<div class="booking-form__date col-xs-12 col-sm-6">
+						<label>
+							<label for="entry-day">Дата въезда</label>
+							<div class="booking-form__date-wrapper">
+								<input type="number" placeholder="дд" min="0" max="31" name="entry-day" id="entry-day">
+								<input type="number" placeholder="мм" min="0" max="12" name="entry-month">
+								<input type="number" placeholder="гггг" min="0" max="2020" name="entry-year">
+							</div>
+						</label>
+					</div>
+					<div class="booking-form__date col-xs-12 col-sm-6">
+						<label>
+							<label for="exit-day">Дата выезда</label>
+							<div class="booking-form__date-wrapper">
+								<input type="number" placeholder="дд" min="0" max="31" name="exit-day" id="exit-day">
+								<input type="number" placeholder="мм" min="0" max="12" name="exit-month">
+								<input type="number" placeholder="гггг" min="0" max="2020" name="exit-year">
+							</div>
+						</label>
+					</div>
 				</div>
 			</div>
 		</section>

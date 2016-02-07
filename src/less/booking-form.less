@@ -1,0 +1,58 @@
+.booking-form {
+	&__date {
+		margin-top: 36px;
+		label {
+			display: block;
+			font-size: 14px;
+			text-transform: uppercase;
+			line-height: 18px;
+			text-align: center;
+		}
+		@media (min-width: @screen-sm) {
+			display: inline-block;
+		}
+		&:first-child {
+			margin-top: 0;
+		}
+		@media (min-width: @screen-sm) {
+			margin-top: 0;
+		}
+	}
+	&__date-wrapper {
+		border: 1px solid #ebebeb;
+		height: 50px;
+		width: 180px;
+		margin: 0 auto;
+		margin-top: 17px;
+		display: flex;
+		@media (min-width: @screen-sm) {
+			width: auto;
+		}
+		@media (min-width: @screen-md) {
+			height: 27px;
+		}
+		input {
+			width: 40px;
+			flex-grow: 1;
+			text-align: center;
+			border: 0;
+			border-right: 1px solid #ebebeb;
+			color: #0ab89d;
+			font-size: 14px;
+			font-weight: 500;
+			&:last-child {
+				border-right: 0;
+			}
+			&[type=number]::-webkit-inner-spin-button,
+			&[type=number]::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				margin: 0;
+			}
+		}
+		input[name=entry-year], input[name=exit-year] {
+			flex-grow: 2;
+		}
+	}
+}
