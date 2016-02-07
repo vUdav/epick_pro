@@ -937,13 +937,14 @@ p {
 	padding: 0;
 }
 
-.main-nav__item a {
+.main-nav__link {
 	text-transform: uppercase;
-	color: #ff7435;
+	color: #191919;
 }
 
-.main-nav__item a:hover {
-	color: #e85715;
+.main-nav__link:hover,
+.main-nav__link--active {
+	color: #ff7435;
 	text-decoration: none;
 }
 

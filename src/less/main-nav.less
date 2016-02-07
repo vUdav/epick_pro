@@ -17,14 +17,12 @@
 		justify-content: space-between;
 		padding: 0;
 	}
-	&__item {
-		a {
-			text-transform: uppercase;
+	&__link {
+		text-transform: uppercase;
+		color: @gray-base;
+		&:hover, &--active {
 			color: @orange-color;
-			&:hover {
-				color: @orange-color--darken;
-				text-decoration: none;
-			}
+			text-decoration: none;
 		}
 	}
 }
