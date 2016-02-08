@@ -136,27 +136,29 @@
 			<h2 class="booking-step__title">Способ оплаты</h2>
 			<div class="booking-form__payment-result-inner container">
 				<div class="row">
-					<div class="booking-form__payment-method col-xs-12">
-						<div class="booking-form__payment-method-item">
-							<input id="payment-method-inplace" type="radio" name="payment-method" value="По приезду">
-							<label for="payment-method-inplace" class="booking-form__payment-method-label">
-								<strong>По приезду</strong>
-								<p class="hidden-xs">Вы можете произвести оплату по факту заселения.</p>
-							</label>
+					<div class="booking-form__payment-method">
+						<div class="booking-form__payment-method-item-wrapper col-xs-12 col-sm-8">
+							<div class="booking-form__payment-method-item">
+								<input id="payment-method-inplace" type="radio" name="payment-method" value="По приезду">
+								<label for="payment-method-inplace" class="booking-form__payment-method-label">
+									<strong>По приезду</strong>
+									<p class="hidden-xs">Вы можете произвести оплату по факту заселения.</p>
+								</label>
+							</div>
+							<div class="booking-form__payment-method-item">
+								<input id="payment-method-now" type="radio" name="payment-method" value="Сейчас" checked>
+								<label for="payment-method-now" class="booking-form__payment-method-label">
+									<strong>Сейчас</strong>
+									<p class="hidden-xs">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+								</label>
+								<div class="booking-form__payment-method-input-inner col-xs-12 col-sm-8"><label>Номер карты<input type="number" name="card-number" placeholder="0000-0000-0000-0000"></label></div>
+								<div class="booking-form__payment-method-input-inner col-xs-12 col-sm-4"><label>Код CvV<input type="number" name="card-cvv" maxlength="3" placeholder="123"><a href="#" class="tooltip"><span class="tooltip__text visible-lg">Поясняющий текст</span></a></label></div>
+								<div class="booking-form__payment-method-input-inner col-xs-12 col-sm-8"><label>Фамилия владельца карты<input type="text" name="card-name" placeholder="Vladimir Vladimirov"></label></div>
+								<div class="booking-form__payment-method-input-inner col-xs-12 col-sm-4"><label>Действует до<input type="text" name="card-date" placeholder="01 / 2018"></label></div>
+								<div class="clearfix"></div>
+							</div>
 						</div>
-						<div class="booking-form__payment-method-item">
-							<input id="payment-method-now" type="radio" name="payment-method" value="Сейчас" checked>
-							<label for="payment-method-now" class="booking-form__payment-method-label">
-								<strong>Сейчас</strong>
-								<p class="hidden-xs">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
-							</label>
-							<div class="booking-form__payment-method-input-inner col-xs-12 col-xs-12"><label>Номер карты<input type="number" name="card-number" placeholder="0000-0000-0000-0000"></label></div>
-							<div class="booking-form__payment-method-input-inner col-xs-12"><label>Код CvV<input type="number" name="card-cvv" maxlength="3" placeholder="123"><a href="#" class="tooltip"><span class="tooltip__text hidden-xs">Поясняющий текст</span></a></label></div>
-							<div class="booking-form__payment-method-input-inner col-xs-12"><label>Фамилия владельца карты<input type="text" name="card-name" placeholder="Vladimir Vladimirov"></label></div>
-							<div class="booking-form__payment-method-input-inner col-xs-12"><label>Действует до<input type="text" name="card-date" placeholder="01 / 2018"></label></div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="booking-form__payment-result">
+						<div class="booking-form__payment-result col-xs-12 col-sm-4">
 							<h3>К оплате</h3>
 							<strong class="booking-form__payment-result-separator">-</strong>
 							<p class="booking-form__payment-result-notification booking-form__payment-result-notification--active">Пожалуйста, <b>выберите дату</b> въезда и выезда, чтобы увидеть сумму к оплате</p>
