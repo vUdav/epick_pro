@@ -950,7 +950,7 @@ p {
 
 .btn {
 	display: inline-block;
-	line-height: 34px;
+	line-height: 37px;
 	background-color: #ff7435;
 	text-align: center;
 	color: #fff;
@@ -958,7 +958,7 @@ p {
 	font-size: 14px;
 	border-radius: 20px;
 	padding: 0 28px;
-	padding-top: 3px;
+	border: 0;
 }
 
 .btn:hover {
@@ -976,6 +976,8 @@ p {
 	margin-right: 9px;
 	position: relative;
 	top: 2px;
+	padding-top: 3px;
+	line-height: 34px;
 }
 
 .btn--bordered {
@@ -1003,6 +1005,18 @@ p {
 .btn--more:hover {
 	background-color: transparent;
 	color: #909090;
+}
+
+.btn--green {
+	background-color: #0ab89d;
+}
+
+.btn--green:hover {
+	background-color: #078874;
+}
+
+.btn--square {
+	border-radius: 0;
 }
 
 .promo__wrapper-slides {
@@ -2064,6 +2078,7 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 
 .booking-form__payment-result-inner .btn {
 	width: 100%;
+	line-height: 50px;
 }
 
 .booking-form__payment-method-item {

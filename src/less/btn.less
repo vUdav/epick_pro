@@ -8,7 +8,7 @@
 	font-size: @btn-font-size;
 	border-radius: @btn-border-radius;
 	padding: 0 28px;
-	padding-top: 3px; //fix for middle align
+	border: 0;
 	&:hover {
 		background-color: @btn-bg--hover;
 		text-decoration: none;
@@ -23,6 +23,10 @@
 		margin-right: 9px;
 		position: relative;
 		top: 2px;
+		//fix for middle align
+		@padding-top: 3px;
+		padding-top: @padding-top;
+		line-height: @btn-line-height - @padding-top;
 	}
 	&--bordered {
 		background-color: transparent;
@@ -46,5 +50,14 @@
 			background-color: transparent;
 			color: @gray-light;
 		}
+	}
+	&--green {
+		background-color: @btn-bg--green;
+		&:hover {
+			background-color: @btn-bg--green-hover;
+		}
+	}
+	&--square {
+		border-radius: 0;
 	}
 }
