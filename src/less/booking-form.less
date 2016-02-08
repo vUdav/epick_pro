@@ -372,4 +372,97 @@
 			margin-bottom: 0;
 		}
 	}
+
+	&__payment-result-inner {
+		padding-top: 39px;
+		.btn {
+			width: 100%;
+		}
+	}
+	&__payment-method-item {
+		border: 1px solid #ebebeb;
+		background-color: #fff;
+		font-size: 14px;
+		margin-bottom: 20px;
+		input[type=radio] {
+			display: none;
+			&:checked + label:before {
+				background: url(../img/icon-check.png);
+			}
+		}
+		.booking-form__payment-method-label {
+			display: block;
+			position: relative;
+			padding: 26px 0 26px 41px;
+			text-transform: uppercase;
+			color: #4c4c4c;
+			&:before {
+				content: "";
+				position: absolute;
+				width: 16px;
+				height: 12px;
+				left: 15px;
+				top: 50%;
+				transform: translate(0,-50%);
+				background: url(../img/icon-uncheck.png);
+			}
+		}
+	}
+	&__payment-method-input-inner {
+		font-size: 14px;
+		text-transform: uppercase;
+		line-height: 18px;
+		margin-bottom: 20px;
+		input {
+			display: block;
+			text-align: center;
+			border: 1px solid #ebebeb;
+			font-size: 14px;
+			line-height: 50px;
+			text-transform: uppercase;
+			width: 100%;
+			margin-top: 14px;
+		}
+	}
+	&__payment-result {
+		border: 1px solid #ebebeb;
+		background-color: #fff;
+		padding: 26px 41px;
+		margin-bottom: 50px;
+		h3 {
+			font-family: @font-family-sans-serif;
+			font-size: 14px;
+			text-transform: uppercase;
+			color: #4c4c4c;
+			text-align: center;
+		}
+	}
+	&__payment-result-separator {
+		display: block;
+		text-align: center;
+		font-size: 24px;
+		line-height: 18px;
+		padding: 20px 0;
+	}
+	&__payment-result-notification {
+		color: #4c4c4c;
+		font-size: 14px;
+		line-height: 19px;
+		display: none;
+		&--active {
+			display: block;
+		}
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 13px;
+			height: 12px;
+			background: url(../img/error-notify.png);
+			margin-right: 5px;
+		}
+		b {
+			font-weight: 400;
+			border-bottom: 1px dashed;
+		}
+	}
 }

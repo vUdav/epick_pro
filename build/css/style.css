@@ -2058,6 +2058,115 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 	margin-bottom: 0;
 }
 
+.booking-form__payment-result-inner {
+	padding-top: 39px;
+}
+
+.booking-form__payment-result-inner .btn {
+	width: 100%;
+}
+
+.booking-form__payment-method-item {
+	border: 1px solid #ebebeb;
+	background-color: #fff;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.booking-form__payment-method-item input[type=radio] {
+	display: none;
+}
+
+.booking-form__payment-method-item input[type=radio]:checked + label:before {
+	background: url(../img/icon-check.png);
+}
+
+.booking-form__payment-method-item .booking-form__payment-method-label {
+	display: block;
+	position: relative;
+	padding: 26px 0 26px 41px;
+	text-transform: uppercase;
+	color: #4c4c4c;
+}
+
+.booking-form__payment-method-item .booking-form__payment-method-label:before {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 12px;
+	left: 15px;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	background: url(../img/icon-uncheck.png);
+}
+
+.booking-form__payment-method-input-inner {
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 18px;
+	margin-bottom: 20px;
+}
+
+.booking-form__payment-method-input-inner input {
+	display: block;
+	text-align: center;
+	border: 1px solid #ebebeb;
+	font-size: 14px;
+	line-height: 50px;
+	text-transform: uppercase;
+	width: 100%;
+	margin-top: 14px;
+}
+
+.booking-form__payment-result {
+	border: 1px solid #ebebeb;
+	background-color: #fff;
+	padding: 26px 41px;
+	margin-bottom: 50px;
+}
+
+.booking-form__payment-result h3 {
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #4c4c4c;
+	text-align: center;
+}
+
+.booking-form__payment-result-separator {
+	display: block;
+	text-align: center;
+	font-size: 24px;
+	line-height: 18px;
+	padding: 20px 0;
+}
+
+.booking-form__payment-result-notification {
+	color: #4c4c4c;
+	font-size: 14px;
+	line-height: 19px;
+	display: none;
+}
+
+.booking-form__payment-result-notification--active {
+	display: block;
+}
+
+.booking-form__payment-result-notification:before {
+	content: "";
+	display: inline-block;
+	width: 13px;
+	height: 12px;
+	background: url(../img/error-notify.png);
+	margin-right: 5px;
+}
+
+.booking-form__payment-result-notification b {
+	font-weight: 400;
+	border-bottom: 1px dashed;
+}
+
 @media (min-width: 768px) {
 
 .container {
