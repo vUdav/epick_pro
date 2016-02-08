@@ -89,42 +89,31 @@
 		<section class="booking-step booking-step--gray">
 			<span class="booking-step__step-count">Шаг 3</span>
 			<h2 class="booking-step__title">Тип коттеджа</h2>
-			<div class="booking-step__inner">
-				<div class="booking-step__location-type-list">
-					<label><input type="radio" value="Флагман" name="cottage-type">Флагман<i class="booking-step__icon-check  booking-step__icon-check--active"></i></label>
-					<label><input type="radio" value="Озёрный" name="cottage-type">Озёрный<i class="booking-step__icon-check"></i></label>
-					<label><input type="radio" value="Ольховка" name="cottage-type">Ольховка<i class="booking-step__icon-check"></i></label>
-					<label><input type="radio" value="Портовый" name="cottage-type">Портовый<i class="booking-step__icon-check"></i></label>
-				</div>
-				<div class="booking-step__location-features">
-					<ul class="booking-step__location-features-list  booking-step__location-features-list--active">
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-area"></i>Площадь<br>100м2</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-room"></i>3 комнаты</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-bed"></i>5 спальных<br>мест</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-bath"></i>Раздельный<br>санузел</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-wifi"></i>WI-FI</li>
-					</ul>
-					<ul class="booking-step__location-features-list">
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-area"></i>Площадь<br>100м2</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-room"></i>3 комнаты</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-bed"></i>5 спальных<br>мест</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-bath"></i>Раздельный<br>санузел</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-wifi"></i>WI-FI</li>
-					</ul>
-					<ul class="booking-step__location-features-list">
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-area"></i>Площадь<br>100м2</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-room"></i>3 комнаты</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-bed"></i>5 спальных<br>мест</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-bath"></i>Раздельный<br>санузел</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-wifi"></i>WI-FI</li>
-					</ul>
-					<ul class="booking-step__location-features-list">
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-area"></i>Площадь<br>100м2</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-room"></i>3 комнаты</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-bed"></i>5 спальных<br>мест</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-bath"></i>Раздельный<br>санузел</li>
-						<li class="booking-step__location-features-item"><i class="booking-step__icon-wifi"></i>WI-FI</li>
-					</ul>
+			<div class="booking-form__location-type-inner  booking-form__location-type-inner--bordered  container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="booking-form__location-type-list">
+							<input type="radio" value="Флагман" name="cottage-type" id="location-type-flagman" checked>
+								<label for="location-type-flagman">Флагман</label>
+							<input type="radio" value="Озёрный" name="cottage-type" id="location-type-ozerniy">
+								<label for="location-type-ozerniy">Озёрный</label>
+							<input type="radio" value="Ольховка" name="cottage-type" id="location-type-olhovka">
+								<label for="location-type-olhovka">Ольховка</label>
+							<input type="radio" value="Портовый" name="cottage-type" id="location-type-portoviy">
+								<label for="location-type-portoviy">Портовый</label>
+						</div>
+					</div>
+					<div class="col-xs-12 hidden-xs">
+						<div class="booking-form__location-features">
+							<ul class="booking-form__location-features-list  booking-form__location-features-list--active">
+								<li class="booking-form__location-features-item  booking-form__location-features-item--icon-area">Площадь<br>100м2</li>
+								<li class="booking-form__location-features-item  booking-form__location-features-item--icon-room">3 комнаты</li>
+								<li class="booking-form__location-features-item  booking-form__location-features-item--icon-bed">5 спальных<br>мест</li>
+								<li class="booking-form__location-features-item  booking-form__location-features-item--icon-bath">Раздельный<br>санузел</li>
+								<li class="booking-form__location-features-item  booking-form__location-features-item--icon-wifi">WI-FI</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
