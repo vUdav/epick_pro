@@ -1,0 +1,22 @@
+.tooltip {
+	display: inline-block;
+	width: 16px;
+	height: 17px;
+	background: url(../img/icon-tooltip.png);
+	position: relative;
+	&:hover &__text {
+		display: block;
+	}
+	&__text {
+		display: none;
+		background-color: #fff;
+		padding: 10px;
+		border: 1px solid #ebebeb;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translate(0,-50%);
+		width: 300px;
+		box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+	}
+}

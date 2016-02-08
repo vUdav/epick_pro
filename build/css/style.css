@@ -2137,6 +2137,11 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 	margin-top: 14px;
 }
 
+.booking-form__payment-method-input-inner .tooltip {
+	float: right;
+	text-transform: none;
+}
+
 .booking-form__payment-result {
 	border: 1px solid #ebebeb;
 	background-color: #fff;
@@ -2185,6 +2190,32 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 .booking-form__payment-result-notification b {
 	font-weight: 400;
 	border-bottom: 1px dashed;
+}
+
+.tooltip {
+	display: inline-block;
+	width: 16px;
+	height: 17px;
+	background: url(../img/icon-tooltip.png);
+	position: relative;
+}
+
+.tooltip:hover .tooltip__text {
+	display: block;
+}
+
+.tooltip__text {
+	display: none;
+	background-color: #fff;
+	padding: 10px;
+	border: 1px solid #ebebeb;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	width: 300px;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 768px) {
