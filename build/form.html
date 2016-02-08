@@ -34,7 +34,7 @@
 	</section>
 
 	<form action="#" class="booking-form">
-		<section class="booking-step  booking-step--gray">
+		<section class="booking-step">
 			<span class="booking-step__step-count">Шаг 1</span>
 			<h2 class="booking-step__title">Дата отдыха</h2>
 			<div class="booking-form__date-inner  booking-form__date-inner--narrow  booking-form__date-inner--bordered container">
@@ -86,7 +86,7 @@
 			</div>
 		</section>
 
-		<section class="booking-step booking-step--gray">
+		<section class="booking-step">
 			<span class="booking-step__step-count">Шаг 3</span>
 			<h2 class="booking-step__title">Тип коттеджа</h2>
 			<div class="booking-form__location-type-inner  booking-form__location-type-inner--bordered  container">
@@ -121,15 +121,17 @@
 		<section class="booking-step">
 			<span class="booking-step__step-count">Шаг 4</span>
 			<h2 class="booking-step__title">Персональная информация</h2>
-			<div class="booking-step__inner">
-				<div class="booking-step__personal-information"><input type="text" name="name" placeholder="Имя"></div>
-				<div class="booking-step__personal-information"><input type="text" name="lastname" placeholder="Фамилия"></div>
-				<div class="booking-step__personal-information"><input type="tel" name="tel" placeholder="Номер телефона"><p>Мы свяжемся с вами в случае необходимости.</p></div>
-				<div class="booking-step__personal-information"><input type="email" name="email" placeholder="E-mail"><p>На этот адрес мы вышлем вам подтверждение о забронированном номере.</p></div>
+			<div class="booking-form__personal-information-inner container">
+				<div class="row">
+					<div class="booking-form__personal-information  booking-form__personal-information--valid  col-xs-12 col-sm-6"><input type="text" name="name" placeholder="Имя" value="Владимир"></div>
+					<div class="booking-form__personal-information col-xs-12 col-sm-6"><input type="text" name="lastname" placeholder="Фамилия"></div>
+					<div class="booking-form__personal-information col-xs-12 col-sm-6"><input type="tel" name="tel" placeholder="Номер телефона"><p>Мы свяжемся с вами в случае необходимости.</p></div>
+					<div class="booking-form__personal-information col-xs-12 col-sm-6"><input type="email" name="email" placeholder="E-mail"><p>На этот адрес мы вышлем вам подтверждение о забронированном номере.</p></div>
+				</div>
 			</div>
 		</section>
 
-		<section class="booking-step booking-step--gray">
+		<section class="booking-step">
 			<span class="booking-step__step-count">Шаг 5</span>
 			<h2 class="booking-step__title">Способ оплаты</h2>
 			<div class="booking-step__inner">

@@ -41,6 +41,17 @@
 			}
 		}
 	}
+
+	&__location {
+		text-align: center;
+		border-right: 1px solid #ebebeb;
+		&:last-child {
+			border-right: 0;
+		}
+		input[type=radio] {
+			display: none;
+		}
+	}
 	&__location-inner {
 		padding-top: 29px;
 		padding-bottom: 29px;
@@ -89,16 +100,6 @@
 		}
 		input[name=entry-year], input[name=exit-year] {
 			flex-grow: 2;
-		}
-	}
-	&__location {
-		text-align: center;
-		border-right: 1px solid #ebebeb;
-		&:last-child {
-			border-right: 0;
-		}
-		input[type=radio] {
-			display: none;
 		}
 	}
 	&__location-title {
@@ -329,6 +330,46 @@
 			width: 50px;
 			height: 42px;
 			background: url(../img/icon-wifi.png);
+		}
+	}
+
+	&__personal-information-inner {
+		padding-top: 33px;
+		@media (min-width: @screen-md) {
+			width: 780px;
+		}
+	}
+	&__personal-information {
+		margin-bottom: 20px;
+		position: relative;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&--valid:before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 16px;
+			height: 12px;
+			left: 36px;
+			top: 50%;
+			transform: translate(0,-50%);
+			background: url(../img/icon-check.png);
+		}
+		input {
+			text-align: center;
+			border: 1px solid #ebebeb;
+			font-size: 14px;
+			line-height: 50px;
+			text-transform: uppercase;
+			width: 100%;
+		}
+		p {
+			margin-top: 10px;
+			font-size: 14px;
+			line-height: 18px;
+			color: #4c4c4c;
+			margin-bottom: 0;
 		}
 	}
 }

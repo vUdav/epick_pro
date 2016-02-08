@@ -1689,6 +1689,10 @@ p {
 	padding-bottom: 50px;
 }
 
+.booking-step:nth-child(odd) {
+	background-color: #f1f1f1;
+}
+
 .booking-step__step-count {
 	color: #929292;
 	font-size: 14px;
@@ -1702,11 +1706,7 @@ p {
 .booking-step__title {
 	font-size: 26px;
 	text-align: center;
-	line-height: 19px;
-}
-
-.booking-step--gray {
-	background-color: #f1f1f1;
+	line-height: 32px;
 }
 
 .booking-form__date {
@@ -1729,6 +1729,19 @@ p {
 .booking-form__location-inner,
 .booking-form__location-type-inner {
 	margin-top: 36px;
+}
+
+.booking-form__location {
+	text-align: center;
+	border-right: 1px solid #ebebeb;
+}
+
+.booking-form__location:last-child {
+	border-right: 0;
+}
+
+.booking-form__location input[type=radio] {
+	display: none;
 }
 
 .booking-form__location-inner {
@@ -1783,19 +1796,6 @@ p {
 	-webkit-flex-grow: 2;
 	-ms-flex-positive: 2;
 	flex-grow: 2;
-}
-
-.booking-form__location {
-	text-align: center;
-	border-right: 1px solid #ebebeb;
-}
-
-.booking-form__location:last-child {
-	border-right: 0;
-}
-
-.booking-form__location input[type=radio] {
-	display: none;
 }
 
 .booking-form__location-title {
@@ -2013,6 +2013,49 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 	width: 50px;
 	height: 42px;
 	background: url(../img/icon-wifi.png);
+}
+
+.booking-form__personal-information-inner {
+	padding-top: 33px;
+}
+
+.booking-form__personal-information {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.booking-form__personal-information:last-child {
+	margin-bottom: 0;
+}
+
+.booking-form__personal-information--valid:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 16px;
+	height: 12px;
+	left: 36px;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	background: url(../img/icon-check.png);
+}
+
+.booking-form__personal-information input {
+	text-align: center;
+	border: 1px solid #ebebeb;
+	font-size: 14px;
+	line-height: 50px;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.booking-form__personal-information p {
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #4c4c4c;
+	margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
@@ -3043,6 +3086,10 @@ td.visible-lg {
 
 .booking-form__location-type-inner--bordered {
 	border: 0;
+}
+
+.booking-form__personal-information-inner {
+	width: 780px;
 }
 
 }
