@@ -65,6 +65,35 @@ module.exports = function(grunt) {
       }
     },
 
+    concat: {
+      start: {
+        src: [
+          'src/js/jquery-2.2.0.min.js',
+          'src/js/owl.carousel.min.js',
+          'src/js/script.js'
+        ],
+        dest: 'build/js/script.js'
+      }
+    },
+
+    uglify: {
+      start: {
+        files: {
+          'build/js/script.min.js': ['build/js/script.js']
+        }
+      }
+    },
+
+    clean: {
+      build: [
+        'build/css',
+        'build/img',
+        'build/js',
+        'build/*.html',
+        'build/*.ico',
+      ]
+    },
+
     // процесс копирования
     copy: {
       // копируем картинки
@@ -131,6 +160,13 @@ module.exports = function(grunt) {
           spawn: false
         },
       },
+      scripts: {
+        files: ['src/js/script.js'],
+        tasks: ['js'],
+        options: {
+          spawn: false
+        },
+      },
     },
 
     // локальный сервер, автообновление
@@ -168,9 +204,23 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'style',
     'img',
+    'js',
     'includereplace:html',
     'browserSync',
     'watch'
+  ]);
+
+  grunt.registerTask('build', [
+    'clean:build',
+    'style',
+    'js',
+    'img',
+    'includereplace:html',
+  ]);
+
+  grunt.registerTask('js', [
+    'concat',
+    'uglify',
   ]);
 
   // только компиляция стилей
