@@ -1049,48 +1049,6 @@ p {
 	padding-bottom: 9px;
 }
 
-.promo__slider-tabs {
-	list-style: none;
-	text-align: center;
-	padding: 0;
-}
-
-.promo__tab {
-	display: inline-block;
-	margin-right: 22px;
-}
-
-.promo__tab:last-child {
-	margin-right: 0;
-}
-
-.promo__tab a {
-	font-size: 14px;
-	color: #909090;
-	text-transform: uppercase;
-	text-decoration: none;
-	position: relative;
-	letter-spacing: 1px;
-}
-
-.promo__tab--active a,
-.promo__tab a:hover {
-	color: #ff7435;
-}
-
-.promo__tab--active a:after,
-.promo__tab a:hover:after {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 30px;
-	height: 2px;
-	background-color: #ff7435;
-	-webkit-transform: translate(-50%);
-	transform: translate(-50%);
-	left: 50%;
-}
-
 .relax {
 	background: url(../img/relax-bg.png) no-repeat;
 	background-position: center;
@@ -1142,6 +1100,48 @@ p {
 
 .relax__features li img {
 	margin-bottom: 14px;
+}
+
+.relax__slider-tabs {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+.relax__tab {
+	display: inline-block;
+	margin-right: 22px;
+}
+
+.relax__tab:last-child {
+	margin-right: 0;
+}
+
+.relax__tab a {
+	font-size: 14px;
+	color: #909090;
+	text-transform: uppercase;
+	text-decoration: none;
+	position: relative;
+	letter-spacing: 1px;
+}
+
+.relax__tab--active a,
+.relax__tab a:hover {
+	color: #ff7435;
+}
+
+.relax__tab--active a:after,
+.relax__tab a:hover:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 2px;
+	background-color: #ff7435;
+	-webkit-transform: translate(-50%);
+	transform: translate(-50%);
+	left: 50%;
 }
 
 .review {

@@ -50,37 +50,4 @@
 			background-color: transparent;
 		}
 	}
-	&__slider-tabs {
-		list-style: none;
-		text-align: center;
-		padding: 0;
-	}
-	&__tab {
-		display: inline-block;
-		margin-right: 22px;
-		&:last-child {
-			margin-right: 0;
-		}
-		a {
-			font-size: 14px;
-			color: @gray-light;
-			text-transform: uppercase;
-			text-decoration: none;
-			position: relative;
-			letter-spacing: 1px;
-		}
-		&--active a, a:hover {
-			color: @orange-color;
-			&:after {
-				content: "";
-				display: block;
-				position: absolute;
-				width: 30px;
-				height: 2px;
-				background-color: @orange-color;
-				transform: translate(-50%);
-				left: 50%;
-			}
-		}
-	}
 }
