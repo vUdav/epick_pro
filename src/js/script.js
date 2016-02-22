@@ -33,4 +33,10 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+	// offers carousel
+	$('#offers').owlCarousel({
+		items: 1,
+		nav: false
+	});
 });

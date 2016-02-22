@@ -1512,10 +1512,6 @@ This must be run when you have at least 2 sprites.
 	margin-bottom: 33px;
 }
 
-.offers__sliders {
-	margin-bottom: 20px;
-}
-
 .offers__slide {
 	height: 300px;
 	background-position: center;
@@ -1548,11 +1544,12 @@ This must be run when you have at least 2 sprites.
 	margin-bottom: 8px;
 }
 
-.offers__dots {
+.offers .owl-dots {
 	text-align: center;
+	margin-top: 20px;
 }
 
-.offers__dot {
+.offers .owl-dot {
 	display: inline-block;
 	margin-right: 20px;
 	width: 15px;
@@ -1561,12 +1558,12 @@ This must be run when you have at least 2 sprites.
 	border-radius: 50%;
 }
 
-.offers__dot:last-child {
+.offers .owl-dot:last-child {
 	margin-right: 0;
 }
 
-.offers__dot--active,
-.offers__dot:hover {
+.offers .owl-dot.active,
+.offers .owl-dot:hover {
 	background-color: #ff7435;
 }
 
