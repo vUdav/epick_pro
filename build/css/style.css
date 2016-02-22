@@ -1412,6 +1412,14 @@ This must be run when you have at least 2 sprites.
 	left: 50%;
 }
 
+.relax__slide {
+	display: none;
+}
+
+.relax__slide--active {
+	display: block;
+}
+
 .review {
 	background: url(../img/review-bg.png) no-repeat center #0ab89d;
 	background-size: cover;
