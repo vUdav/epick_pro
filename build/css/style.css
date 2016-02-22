@@ -1440,13 +1440,13 @@ This must be run when you have at least 2 sprites.
 	background-color: #fff;
 	border: 1px solid #17aa92;
 	margin-bottom: 39px;
+	margin-top: 29px;
 }
 
 .review__author {
 	position: relative;
 	text-align: center;
-	padding-top: 72px;
-	padding-bottom: 29px;
+	padding: 72px 15px 29px 15px;
 	font-weight: 500;
 	min-height: 305px;
 }
@@ -1458,6 +1458,7 @@ This must be run when you have at least 2 sprites.
 	transform: translate(-50%);
 	top: -24px;
 	height: 82px;
+	width: auto !important;
 }
 
 .review__author p {

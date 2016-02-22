@@ -15,4 +15,22 @@ $(document).ready(function() {
 		$('.relax__slide').removeClass('relax__slide--active');
 		$(this).closest('.relax__slider').find(ident).addClass('relax__slide--active');
 	});
+
+	// reviews carousel
+	$('#reviews').owlCarousel({
+		loop: true,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
+		nav: false,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 2
+			}
+		}
+	});
 });
