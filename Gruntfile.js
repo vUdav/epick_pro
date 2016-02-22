@@ -68,8 +68,8 @@ module.exports = function(grunt) {
     concat: {
       start: {
         src: [
-          'src/js/jquery-2.2.0.min.js',
-          'src/js/owl.carousel.min.js',
+          'bower_components/jquery/dist/jquery.min.js',
+          'bower_components/owl.carousel/dist/owl.carousel.min.js',
           'src/js/script.js'
         ],
         dest: 'build/js/script.js'
@@ -108,6 +108,29 @@ module.exports = function(grunt) {
       },
     },
 
+    // оптимизируем изображения
+    imagemin: {
+      build: {
+        options: {
+          optimizationLevel: 3
+        },
+        files: [{
+          expand: true,
+          src: ['build/img/**/*.{png,jpg,gif,svg}']
+        }]
+      }
+    },
+
+    // собираем изображения в спрайт
+    sprite:{
+      all: {
+        src: 'src/img/sprites/*.png',
+        dest: '../img/sprite.png',
+        destCss: 'src/less/blocks/sprite.less',
+        algorithm: 'binary-tree'
+      }
+    },
+
     // обрабатываем разметку (инклуды)
     includereplace: {
       html: {
@@ -143,7 +166,7 @@ module.exports = function(grunt) {
       // следить за картинками
       images: {
         // за сохранением каких файлов следить
-        files: ['src/img/**/*.{png,jpg,gif,svg}'],
+        files: ['src/img/content/*.{png,jpg,gif,svg}','src/img/*.{png,jpg,gif,svg}'],
         // какую задачу при этом запускать (сами задачи — см. ниже)
         tasks: ['img'],
         options: {
@@ -202,8 +225,8 @@ module.exports = function(grunt) {
 
   // задача по умолчанию
   grunt.registerTask('default', [
-    'style',
     'img',
+    'style',
     'js',
     'includereplace:html',
     'browserSync',
@@ -233,7 +256,9 @@ module.exports = function(grunt) {
 
   // только обработка картинок
   grunt.registerTask('img', [
-    'copy:img',
+    'imagemin',
+    'sprite',
+    'copy:img'
   ]);
 
 };

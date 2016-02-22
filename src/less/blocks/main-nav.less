@@ -1,0 +1,54 @@
+.main-nav {
+
+	@media (min-width: @screen-md) {
+		margin-top: 3px;
+		position: static;
+	}
+
+	&__hamburger {
+		display: block;
+		.sprite(@burger);
+		position: absolute;
+		top: -30px;
+		right: 15px;
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 0;
+		padding-top: 30px;
+		display: none;
+
+		&--active {
+			display: block;
+		}
+
+		@media (min-width: @screen-md) {
+			flex-direction: row;
+		}
+	}
+
+	&__item {
+		border-top: 1px solid #eee;
+		&:last-child {
+			border-bottom: 1px solid #eee;
+		}
+
+		a {
+			padding: 10px 0;
+			display: block;
+		}
+	}
+
+	&__link {
+		text-transform: uppercase;
+		color: @gray-base;
+		&:hover, &--active {
+			color: @orange-color;
+			text-decoration: none;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.page-footer {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-top: 1px solid #ebebeb;
+	&__logo-socials {
+		text-align: center;
+	}
+	&__socials {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		margin-top: 12px;
+	}
+	&__social-item {
+		display: inline-block;
+		margin-right: 20px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__social-link {
+		display: block;
+		&--vk {
+			.sprite(@ftr-icon-vk);
+		}
+		&--inst {
+			.sprite(@ftr-icon-inst);
+		}
+		&--fb {
+			.sprite(@ftr-icon-fb);
+		}
+	}
+	&__address {
+		padding-top: 24px;
+	}
+	&__contacts {
+		padding-top: 24px;
+	}
+}
