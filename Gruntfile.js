@@ -102,7 +102,7 @@ module.exports = function(grunt) {
         // откуда
         cwd: 'src/img/',
         // какие файлы
-        src: ['**/*.{png,jpg,gif,svg}'],
+        src: ['content/*.{png,jpg,gif,svg}','*.{png,jpg,gif,svg}'],
         // куда
         dest: 'build/img/',
       },
@@ -125,7 +125,7 @@ module.exports = function(grunt) {
     sprite:{
       all: {
         src: 'src/img/sprites/*.png',
-        dest: '../img/sprite.png',
+        dest: 'src/img/sprite.png',
         destCss: 'src/less/blocks/sprite.less',
         algorithm: 'binary-tree'
       }
@@ -166,7 +166,7 @@ module.exports = function(grunt) {
       // следить за картинками
       images: {
         // за сохранением каких файлов следить
-        files: ['src/img/content/*.{png,jpg,gif,svg}','src/img/*.{png,jpg,gif,svg}'],
+        files: ['src/img/content/**/*.{png,jpg,gif,svg}'],
         // какую задачу при этом запускать (сами задачи — см. ниже)
         tasks: ['img'],
         options: {
@@ -225,8 +225,8 @@ module.exports = function(grunt) {
 
   // задача по умолчанию
   grunt.registerTask('default', [
-    'img',
     'style',
+    'img',
     'js',
     'includereplace:html',
     'browserSync',
@@ -256,9 +256,9 @@ module.exports = function(grunt) {
 
   // только обработка картинок
   grunt.registerTask('img', [
-    'imagemin',
     'sprite',
-    'copy:img'
+    'copy:img',
+    'imagemin'
   ]);
 
 };

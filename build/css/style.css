@@ -1146,7 +1146,7 @@ This must be run when you have at least 2 sprites.
 .logo__logo-icon {
 	display: block;
 	margin: 0 auto;
-	background-image: url(../../../../img/sprite.png);
+	background-image: url(../../img/sprite.png);
 	background-position: 0px 0px;
 	width: 143px;
 	height: 49px;
@@ -1154,7 +1154,7 @@ This must be run when you have at least 2 sprites.
 
 .main-nav__hamburger {
 	display: block;
-	background-image: url(../../../../img/sprite.png);
+	background-image: url(../../img/sprite.png);
 	background-position: -155px -113px;
 	width: 29px;
 	height: 24px;
@@ -1229,8 +1229,8 @@ This must be run when you have at least 2 sprites.
 .btn--calendar-icon:before {
 	content: "";
 	display: inline-block;
-	background-image: url(../../../../img/sprite.png);
-	background-position: -98px -91px;
+	background-image: url(../../img/sprite.png);
+	background-position: -200px -113px;
 	width: 15px;
 	height: 16px;
 	margin-right: 9px;
@@ -1477,15 +1477,15 @@ This must be run when you have at least 2 sprites.
 }
 
 .review__social-links--vk {
-	background-image: url(../../../../img/sprite.png);
-	background-position: -223px -171px;
+	background-image: url(../../img/sprite.png);
+	background-position: -99px -91px;
 	width: 22px;
 	height: 13px;
 }
 
 .review__social-links--fb {
-	background-image: url(../../../../img/sprite.png);
-	background-position: -198px -78px;
+	background-image: url(../../img/sprite.png);
+	background-position: -82px -91px;
 	width: 17px;
 	height: 17px;
 }
@@ -1598,7 +1598,7 @@ This must be run when you have at least 2 sprites.
 .location__bus:before {
 	content: "";
 	display: block;
-	background-image: url(../../../../img/sprite.png);
+	background-image: url(../../img/sprite.png);
 	background-position: 0px -158px;
 	width: 50px;
 	height: 27px;
@@ -1622,7 +1622,7 @@ This must be run when you have at least 2 sprites.
 .location__train:before {
 	content: "";
 	display: block;
-	background-image: url(../../../../img/sprite.png);
+	background-image: url(../../img/sprite.png);
 	background-position: -97px -113px;
 	width: 58px;
 	height: 24px;
@@ -1709,22 +1709,22 @@ This must be run when you have at least 2 sprites.
 }
 
 .page-footer__social-link--vk {
-	background-image: url(../../../../img/sprite.png);
-	background-position: -223px -157px;
-	width: 26px;
-	height: 14px;
+	background-image: url(../../img/sprite.png);
+	background-position: -223px -139px;
+	width: 20px;
+	height: 20px;
 }
 
 .page-footer__social-link--inst {
-	background-image: url(../../../../img/sprite.png);
-	background-position: -223px -117px;
-	width: 21px;
+	background-image: url(../../img/sprite.png);
+	background-position: -198px -62px;
+	width: 20px;
 	height: 20px;
 }
 
 .page-footer__social-link--fb {
-	background-image: url(../../../../img/sprite.png);
-	background-position: -223px -137px;
+	background-image: url(../../img/sprite.png);
+	background-position: -223px -159px;
 	width: 20px;
 	height: 20px;
 }
@@ -2126,9 +2126,10 @@ This must be run when you have at least 2 sprites.
 .booking-form__location-hotel--icon {
 	content: "";
 	display: block;
+	background-image: url(../../img/sprite.png);
+	background-position: 0px -49px;
 	width: 82px;
 	height: 64px;
-	background: url(../img/icon-hotel.png);
 	margin: 0 auto;
 	margin-bottom: 15px;
 	opacity: .4;
@@ -2138,10 +2139,11 @@ This must be run when you have at least 2 sprites.
 .booking-form__location-hotel:after {
 	content: "";
 	display: block;
+	background-image: url(../../img/sprite.png);
+	background-position: -121px -91px;
 	width: 16px;
 	height: 12px;
 	margin: 0 auto;
-	background: url(../img/icon-check.png);
 	opacity: 0;
 	transition: .2s opacity;
 }
@@ -2159,9 +2161,10 @@ input:checked + .booking-form__location-hotel .booking-form__location-hotel--ico
 .booking-form__location-cottage--icon {
 	content: "";
 	display: block;
-	width: 82px;
-	height: 64px;
-	background: url(../img/icon-cottage.png);
+	background-image: url(../../img/sprite.png);
+	background-position: -143px 0px;
+	width: 80px;
+	height: 62px;
 	margin: 0 auto;
 	margin-bottom: 15px;
 	opacity: .4;
@@ -2171,10 +2174,11 @@ input:checked + .booking-form__location-hotel .booking-form__location-hotel--ico
 .booking-form__location-cottage:after {
 	content: "";
 	display: block;
+	background-image: url(../../img/sprite.png);
+	background-position: -121px -91px;
 	width: 16px;
 	height: 12px;
 	margin: 0 auto;
-	background: url(../img/icon-check.png);
 	opacity: 0;
 	transition: .2s opacity;
 }
@@ -2240,6 +2244,8 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 .booking-form__location-type-list label:after {
 	content: "";
 	display: block;
+	background-image: url(../../img/sprite.png);
+	background-position: -121px -91px;
 	width: 16px;
 	height: 12px;
 	margin: 0 auto;
@@ -2248,7 +2254,6 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 	top: 50%;
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
-	background: url(../img/icon-check.png);
 	opacity: 0;
 	transition: .2s opacity;
 }
@@ -2298,33 +2303,38 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 }
 
 .booking-form__location-features-item--icon-area:before {
-	width: 43px;
-	height: 43px;
-	background: url(../img/icon-area.png);
+	background-image: url(../../img/sprite.png);
+	background-position: 0px -113px;
+	width: 45px;
+	height: 45px;
 }
 
 .booking-form__location-features-item--icon-room:before {
+	background-image: url(../../img/sprite.png);
+	background-position: -223px 0px;
 	width: 27px;
 	height: 43px;
-	background: url(../img/icon-room.png);
 }
 
 .booking-form__location-features-item--icon-bed:before {
+	background-image: url(../../img/sprite.png);
+	background-position: -143px -62px;
 	width: 55px;
 	height: 43px;
-	background: url(../img/icon-bed.png);
 }
 
 .booking-form__location-features-item--icon-bath:before {
+	background-image: url(../../img/sprite.png);
+	background-position: -45px -113px;
 	width: 52px;
 	height: 28px;
-	background: url(../img/icon-bath.png);
 }
 
 .booking-form__location-features-item--icon-wifi:before {
+	background-image: url(../../img/sprite.png);
+	background-position: -82px -49px;
 	width: 50px;
 	height: 42px;
-	background: url(../img/icon-wifi.png);
 }
 
 .booking-form__personal-information-inner {
@@ -2344,13 +2354,14 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 	content: "";
 	display: block;
 	position: absolute;
+	background-image: url(../../img/sprite.png);
+	background-position: -121px -91px;
 	width: 16px;
 	height: 12px;
 	left: 36px;
 	top: 50%;
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
-	background: url(../img/icon-check.png);
 }
 
 .booking-form__personal-information input {
@@ -2393,7 +2404,10 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 }
 
 .booking-form__payment-method-item input[type=radio]:checked + label:before {
-	background: url(../img/icon-check.png);
+	background-image: url(../../img/sprite.png);
+	background-position: -121px -91px;
+	width: 16px;
+	height: 12px;
 }
 
 .booking-form__payment-method-label {
@@ -2408,13 +2422,14 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 .booking-form__payment-method-label:before {
 	content: "";
 	position: absolute;
+	background-image: url(../../img/sprite.png);
+	background-position: -45px -141px;
 	width: 16px;
 	height: 12px;
 	left: 15px;
 	top: 50%;
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
-	background: url(../img/icon-uncheck.png);
 }
 
 .booking-form__payment-method-input-inner {
@@ -2479,9 +2494,10 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 .booking-form__payment-result-notification:before {
 	content: "";
 	display: inline-block;
+	background-image: url(../../img/sprite.png);
+	background-position: -61px -141px;
 	width: 13px;
 	height: 12px;
-	background: url(../img/error-notify.png);
 	margin-right: 5px;
 }
 
@@ -2492,9 +2508,10 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 
 .tooltip {
 	display: inline-block;
+	background-image: url(../../img/sprite.png);
+	background-position: -184px -113px;
 	width: 16px;
 	height: 17px;
-	background: url(../img/icon-tooltip.png);
 	position: relative;
 }
 
@@ -2899,15 +2916,16 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 
 .booking-form__location-type-list label:before {
 	display: block;
+	background-image: url(../../img/sprite.png);
+	background-position: -198px -82px;
 	width: 19px;
-	height: 17px;
+	height: 16px;
 	position: absolute;
 	left: 50%;
 	-webkit-transform: translate(-50%);
 	transform: translate(-50%);
 	bottom: -43px;
 	z-index: 1;
-	background: url(../img/location-type-triangle.png);
 	display: none;
 }
 

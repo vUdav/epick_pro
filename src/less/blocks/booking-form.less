@@ -115,9 +115,7 @@
 		&--icon {
 			content: "";
 			display: block;
-			width: 82px;
-			height: 64px;
-			background: url(../img/icon-hotel.png);
+			.sprite(@icon-hotel);
 			margin: 0 auto;
 			margin-bottom: 15px;
 			opacity: .4;
@@ -126,10 +124,8 @@
 		&:after {
 			content: "";
 			display: block;
-			width: 16px;
-			height: 12px;
+			.sprite(@icon-check);
 			margin: 0 auto;
-			background: url(../img/icon-check.png);
 			opacity: 0;
 			transition: .2s opacity;
 		}
@@ -142,9 +138,7 @@
 		&--icon {
 			content: "";
 			display: block;
-			width: 82px;
-			height: 64px;
-			background: url(../img/icon-cottage.png);
+			.sprite(@icon-cottage);
 			margin: 0 auto;
 			margin-bottom: 15px;
 			opacity: .4;
@@ -153,10 +147,8 @@
 		&:after {
 			content: "";
 			display: block;
-			width: 16px;
-			height: 12px;
+			.sprite(@icon-check);
 			margin: 0 auto;
-			background: url(../img/icon-check.png);
 			opacity: 0;
 			transition: .2s opacity;
 		}
@@ -243,14 +235,12 @@
 			&:after {
 				content: "";
 				display: block;
-				width: 16px;
-				height: 12px;
+				.sprite(@icon-check);
 				margin: 0 auto;
 				position: absolute;
 				left: 0;
 				top: 50%;
 				transform: translate(0,-50%);
-				background: url(../img/icon-check.png);
 				opacity: 0;
 				transition: .2s opacity;
 				@media (min-width: @screen-sm) {
@@ -264,14 +254,12 @@
 				content: "";
 				@media (min-width: @screen-sm) {
 					display: block;
-					width: 19px;
-					height: 17px;
+					.sprite(@location-type-triangle);
 					position: absolute;
 					left: 50%;
 					transform: translate(-50%);
 					bottom: -43px;
 					z-index: 1;
-					background: url(../img/location-type-triangle.png);
 					display: none;
 				}
 			}
@@ -307,29 +295,19 @@
 			margin-bottom: 16px;
 		}
 		&--icon-area:before {
-			width: 43px;
-			height: 43px;
-			background: url(../img/icon-area.png);
+			.sprite(@icon-area);
 		}
 		&--icon-room:before {
-			width: 27px;
-			height: 43px;
-			background: url(../img/icon-room.png);
+			.sprite(@icon-room);
 		}
 		&--icon-bed:before {
-			width: 55px;
-			height: 43px;
-			background: url(../img/icon-bed.png);
+			.sprite(@icon-bed);
 		}
 		&--icon-bath:before {
-			width: 52px;
-			height: 28px;
-			background: url(../img/icon-bath.png);
+			.sprite(@icon-bath);
 		}
 		&--icon-wifi:before {
-			width: 50px;
-			height: 42px;
-			background: url(../img/icon-wifi.png);
+			.sprite(@icon-wifi);
 		}
 	}
 
@@ -349,12 +327,10 @@
 			content: "";
 			display: block;
 			position: absolute;
-			width: 16px;
-			height: 12px;
+			.sprite(@icon-check);
 			left: 36px;
 			top: 50%;
 			transform: translate(0,-50%);
-			background: url(../img/icon-check.png);
 		}
 		input {
 			text-align: center;
@@ -407,7 +383,7 @@
 		input[type=radio] {
 			display: none;
 			&:checked + label:before {
-				background: url(../img/icon-check.png);
+				.sprite(@icon-check);
 			}
 		}
 	}
@@ -421,12 +397,10 @@
 		&:before {
 			content: "";
 			position: absolute;
-			width: 16px;
-			height: 12px;
+			.sprite(@icon-uncheck);
 			left: 15px;
 			top: 50%;
 			transform: translate(0,-50%);
-			background: url(../img/icon-uncheck.png);
 		}
 		p {
 			@media (min-width: @screen-sm) {
@@ -503,9 +477,7 @@
 		&:before {
 			content: "";
 			display: inline-block;
-			width: 13px;
-			height: 12px;
-			background: url(../img/error-notify.png);
+			.sprite(@error-notify);
 			margin-right: 5px;
 		}
 		b {
