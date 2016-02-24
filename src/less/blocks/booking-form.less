@@ -265,6 +265,14 @@
 			}
 		}
 	}
+
+	&__location-features {
+		display: none;
+		&--active {
+			display: block;
+		}
+	}
+
 	&__location-features-list {
 		padding-top: 26px;
 		padding-bottom: 26px;
@@ -311,6 +319,13 @@
 		}
 	}
 
+	&__location-type-wrapper {
+		display: none;
+		&--active {
+			display: block;
+		}
+	}
+
 	&__personal-information-inner {
 		padding-top: 33px;
 		@media (min-width: @screen-md) {
@@ -323,14 +338,13 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
-		&--valid:before {
+		&.has-success:before {
 			content: "";
 			display: block;
 			position: absolute;
 			.sprite(@icon-check);
 			left: 36px;
-			top: 50%;
-			transform: translate(0,-50%);
+			top: 22px;
 		}
 		input {
 			text-align: center;
@@ -466,14 +480,10 @@
 		line-height: 18px;
 		padding: 20px 0;
 	}
-	&__payment-result-notification {
+	.form-error {
 		color: #4c4c4c;
 		font-size: 14px;
 		line-height: 19px;
-		display: none;
-		&--active {
-			display: block;
-		}
 		&:before {
 			content: "";
 			display: inline-block;

@@ -70,6 +70,8 @@ module.exports = function(grunt) {
         src: [
           'bower_components/jquery/dist/jquery.min.js',
           'bower_components/owl.carousel/dist/owl.carousel.min.js',
+          'bower_components/jquery-form-validator/form-validator/jquery.form-validator.min.js',
+          'bower_components/fancybox/source/jquery.fancybox.pack.js',
           'src/js/script.js'
         ],
         dest: 'build/js/script.js'
@@ -102,7 +104,7 @@ module.exports = function(grunt) {
         // откуда
         cwd: 'src/img/',
         // какие файлы
-        src: ['content/*.{png,jpg,gif,svg}','*.{png,jpg,gif,svg}'],
+        src: ['content/*.{png,jpg,gif,svg}','*.{png,jpg,gif,svg}','bower_components/fancybox/source/*.{png,jpg,gif,svg}'],
         // куда
         dest: 'build/img/',
       },

@@ -39,4 +39,67 @@ $(document).ready(function() {
 		items: 1,
 		nav: false
 	});
+
+	// form
+	// location type
+	$('.booking-form__location-trigger').on('change',function(){
+		$('.booking-form__location-type-wrapper').removeClass('booking-form__location-type-wrapper--active');
+		if ($('#booking-form__location-hotel').prop("checked")) {
+			$('#form-hotel').addClass('booking-form__location-type-wrapper--active');
+		}
+		if ($('#booking-form__location-cottage').prop("checked")) {
+			$('#form-cottage').addClass('booking-form__location-type-wrapper--active');
+		}
+	});
+
+	// location features
+	$('.booking-form__location-type-trigger').on('change',function(){
+		$('.booking-form__location-features').removeClass('booking-form__location-features--active');
+		// hotel
+		if ($('#location-type-hotel-flagman').prop("checked")) {
+			$('#location-type-hotel-features-flagman').addClass('booking-form__location-features--active');
+		}
+		if ($('#location-type-hotel-ozerniy').prop("checked")) {
+			$('#location-type-hotel-features-ozerniy').addClass('booking-form__location-features--active');
+		}
+		if ($('#location-type-hotel-olhovka').prop("checked")) {
+			$('#location-type-hotel-features-olhovka').addClass('booking-form__location-features--active');
+		}
+		if ($('#location-type-hotel-portoviy').prop("checked")) {
+			$('#location-type-hotel-features-portoviy').addClass('booking-form__location-features--active');
+		}
+		// cottage
+		if ($('#location-type-cottage-flagman').prop("checked")) {
+			$('#location-type-cottage-features-flagman').addClass('booking-form__location-features--active');
+		}
+		if ($('#location-type-cottage-ozerniy').prop("checked")) {
+			$('#location-type-cottage-features-ozerniy').addClass('booking-form__location-features--active');
+		}
+		if ($('#location-type-cottage-olhovka').prop("checked")) {
+			$('#location-type-cottage-features-olhovka').addClass('booking-form__location-features--active');
+		}
+		if ($('#location-type-cottage-portoviy').prop("checked")) {
+			$('#location-type-cottage-features-portoviy').addClass('booking-form__location-features--active');
+		}
+	});
+
+	// form valid
+		$.validate({
+			form: '#booking-form',
+			scrollToTopOnError : false,
+			errorMessagePosition : $('#booking-form__payment-result-message')
+		});
+		$('#payment-method-now').on('change',function(){
+			if ($(this).prop("checked")) {
+				$('#payment-method-now-card-number').attr('data-validation','number');
+				$('#payment-method-now-card-cvv').attr('data-validation','number');
+				$('#payment-method-now-card-name').attr('data-validation','required');
+				$('#payment-method-now-card-date').attr('data-validation','required');
+			} else {
+				$('#payment-method-now-card-number').removeAttr('data-validation');
+				$('#payment-method-now-card-cvv').removeAttr('data-validation');
+				$('#payment-method-now-card-name').removeAttr('data-validation');
+				$('#payment-method-now-card-date').removeAttr('data-validation');
+			}
+		});
 });
