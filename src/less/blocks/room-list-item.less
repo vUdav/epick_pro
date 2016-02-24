@@ -1,12 +1,14 @@
 .room-list-item {
 	background-color: #fafafa;
-	border: 1px solid #ebebeb;
 	margin-bottom: 50px;
 	padding-top: 40px;
 	padding-bottom: 40px;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
 	@media (min-width: @screen-md) {
 		padding-top: 0;
 		padding-bottom: 0;
+		border: 1px solid #ebebeb;
 	}
 	&:last-child {
 		margin-bottom: 0;
@@ -37,12 +39,17 @@
 	}
 	&__img-md {
 		padding-right: 0;
+		overflow: hidden;
+		img {
+			height: 100%;
+			width: auto;
+			max-width: none;
+		}
 	}
 	&__btn {
 		margin-top: 30px;
 		text-align: center;
 		.btn {
-			margin-bottom: 26px;
 			&:last-child {
 				margin-bottom: 0;
 				margin-right: 0;
@@ -56,13 +63,17 @@
 		}
 	}
 	&__content {
+		padding: 0;
 		@media (min-width: @screen-md) {
 			padding-top: 40px;
+			padding-bottom: 51px;
 			padding-left: 110px;
 			padding-right: 110px;
 		}
 	}
 	&__text {
-		padding: 0;
+		@media (min-width: @screen-md) {
+			padding: 0;
+		}
 	}
 }

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic);@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&subset=latin,cyrillic);.owl-carousel .animated {
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic);@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&subset=latin,cyrillic);@import url(https://fonts.googleapis.com/css?family=PT+Serif+Caption&subset=latin,cyrillic);.owl-carousel .animated {
 	-webkit-animation-duration: 1000ms;
 	animation-duration: 1000ms;
 	-webkit-animation-fill-mode: both;
@@ -933,7 +933,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "PT Serif", Helvetica, Arial, sans-serif;
+	font-family: 'PT Serif Caption', serif;
 	line-height: 1.4em;
 	font-weight: 400;
 	margin: 0;
@@ -1476,6 +1476,7 @@ This must be run when you have at least 2 sprites.
 .main-nav__item a {
 	padding: 10px 0;
 	display: block;
+	font-size: 14px;
 }
 
 .main-nav__link {
@@ -1491,14 +1492,13 @@ This must be run when you have at least 2 sprites.
 
 .btn {
 	display: inline-block;
-	line-height: 37px;
 	background-color: #ff7435;
 	text-align: center;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 14px;
 	border-radius: 20px;
-	padding: 0 28px;
+	padding: 7px 28px;
 	border: 0;
 }
 
@@ -1937,7 +1937,7 @@ This must be run when you have at least 2 sprites.
 
 .placement__card {
 	margin-bottom: 19px;
-	border: 1px solid #23ae9e;
+	border: 1px solid #1da694;
 }
 
 .placement__card-text {
@@ -1956,7 +1956,7 @@ This must be run when you have at least 2 sprites.
 }
 
 .placement__card-text strong {
-	font-family: "PT Serif", Helvetica, Arial, sans-serif;
+	font-family: 'PT Serif Caption', serif;
 	display: block;
 	font-size: 26px;
 	font-weight: 400;
@@ -2057,10 +2057,11 @@ This must be run when you have at least 2 sprites.
 
 .room-list-item {
 	background-color: #fafafa;
-	border: 1px solid #ebebeb;
 	margin-bottom: 50px;
 	padding-top: 40px;
 	padding-bottom: 40px;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
 }
 
 .room-list-item:last-child {
@@ -2082,7 +2083,7 @@ This must be run when you have at least 2 sprites.
 }
 
 .room-list-item__title strong {
-	font-family: "PT Serif", Helvetica, Arial, sans-serif;
+	font-family: 'PT Serif Caption', serif;
 	display: block;
 	font-size: 26px;
 	font-weight: 400;
@@ -2097,6 +2098,13 @@ This must be run when you have at least 2 sprites.
 
 .room-list-item__img-md {
 	padding-right: 0;
+	overflow: hidden;
+}
+
+.room-list-item__img-md img {
+	height: 100%;
+	width: auto;
+	max-width: none;
 }
 
 .room-list-item__btn {
@@ -2104,16 +2112,12 @@ This must be run when you have at least 2 sprites.
 	text-align: center;
 }
 
-.room-list-item__btn .btn {
-	margin-bottom: 26px;
-}
-
 .room-list-item__btn .btn:last-child {
 	margin-bottom: 0;
 	margin-right: 0;
 }
 
-.room-list-item__text {
+.room-list-item__content {
 	padding: 0;
 }
 
@@ -2138,7 +2142,7 @@ This must be run when you have at least 2 sprites.
 }
 
 .single-room-card__title strong {
-	font-family: "PT Serif", Helvetica, Arial, sans-serif;
+	font-family: 'PT Serif Caption', serif;
 	display: block;
 	font-size: 30px;
 	text-align: center;
@@ -2151,7 +2155,7 @@ This must be run when you have at least 2 sprites.
 	display: none;
 	position: absolute;
 	left: 0;
-	top: 40%;
+	top: 50%;
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 	font-size: 0;
@@ -2272,6 +2276,10 @@ This must be run when you have at least 2 sprites.
 	position: relative;
 }
 
+.single-room-other-category__card:hover .single-room-other-category__img {
+	opacity: .8;
+}
+
 .single-room-other-category__img {
 	height: 200px;
 	overflow: hidden;
@@ -2298,7 +2306,7 @@ This must be run when you have at least 2 sprites.
 }
 
 .single-room-other-category__card-text strong {
-	font-family: "PT Serif", Helvetica, Arial, sans-serif;
+	font-family: 'PT Serif Caption', serif;
 	display: block;
 	font-size: 26px;
 	text-align: center;
@@ -2421,7 +2429,8 @@ This must be run when you have at least 2 sprites.
 	border-right: 1px solid #ebebeb;
 	color: #0ab89d;
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 .booking-form__date-wrapper input:last-child {
@@ -3212,7 +3221,6 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 
 .single-room-card__slider .owl-nav {
 	display: block;
-	top: 50%;
 }
 
 .single-room-card__comfort-list {
@@ -3932,6 +3940,7 @@ td.visible-lg {
 .room-list-item {
 	padding-top: 0;
 	padding-bottom: 0;
+	border: 1px solid #ebebeb;
 }
 
 .room-list-item__btn {
@@ -3940,8 +3949,13 @@ td.visible-lg {
 
 .room-list-item__content {
 	padding-top: 40px;
+	padding-bottom: 51px;
 	padding-left: 110px;
 	padding-right: 110px;
+}
+
+.room-list-item__text {
+	padding: 0;
 }
 
 .single-room-card__content {
@@ -3955,6 +3969,10 @@ td.visible-lg {
 	-webkit-order: 2;
 	-ms-flex-order: 2;
 	order: 2;
+}
+
+.single-room-card__slider .owl-nav {
+	top: 40%;
 }
 
 .single-room-card__description {
