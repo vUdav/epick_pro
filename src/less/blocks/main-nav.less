@@ -21,13 +21,15 @@
 		padding: 0;
 		padding-top: 30px;
 		display: none;
-
 		&--active {
-			display: block;
+			display: flex;
+			padding-top: 0;
 		}
 
 		@media (min-width: @screen-md) {
 			flex-direction: row;
+			display: flex;
+			padding-top: 0;
 		}
 	}
 
@@ -37,9 +39,20 @@
 			border-bottom: 1px solid #eee;
 		}
 
+		@media (min-width: @screen-md) {
+			border-top: 0;
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+
 		a {
 			padding: 10px 0;
 			display: block;
+
+			@media (min-width: @screen-md) {
+				padding: 0;
+			}
 		}
 	}
 

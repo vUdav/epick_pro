@@ -6,3 +6,5 @@
 * Git
 * Less
 * FlexBox
+* Grunt
+* Bower

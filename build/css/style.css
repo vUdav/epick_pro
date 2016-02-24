@@ -1180,7 +1180,10 @@ This must be run when you have at least 2 sprites.
 }
 
 .main-nav__list--active {
-	display: block;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding-top: 0;
 }
 
 .main-nav__item {
@@ -3503,6 +3506,22 @@ td.visible-lg {
 	-webkit-flex-direction: row;
 	-ms-flex-direction: row;
 	flex-direction: row;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding-top: 0;
+}
+
+.main-nav__item {
+	border-top: 0;
+}
+
+.main-nav__item:last-child {
+	border-bottom: 0;
+}
+
+.main-nav__item a {
+	padding: 0;
 }
 
 .promo__wrapper-slides {
