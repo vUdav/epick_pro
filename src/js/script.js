@@ -104,11 +104,41 @@ $(document).ready(function() {
 	});
 
 	// single room gallery
-	var singleRoomGallery = $('#single-room__gallery');
-	singleRoomGallery.owlCarousel({
+	$('#single-room__gallery').owlCarousel({
 		items: 1,
 		nav: true,
 		dots: false
 	});
 	$(".fancybox").fancybox();
+
+	// homepage gallery
+	var homepageGallery = $('#homepage-gallery');
+	homepageGallery.owlCarousel({
+		items: 7,
+		nav: false,
+		dots: false,
+		loop: true,
+		center: true,
+		stagePadding: 70,
+		responsive: {
+			0: {
+				items: 1,
+				center: false,
+				stagePadding: 0
+			},
+			1200: {
+				items: 7
+			}
+		}
+	});
+	homepageGallery.on('click','img',function() {
+		var carousel = homepageGallery.data('owl.carousel');
+		carousel.to(carousel.relative($(this).parent().index()), false, true);
+	});
+	homepageGallery.on('changed.owl.carousel',function(){
+		setTimeout(function(){
+			var img = homepageGallery.find('.owl-item.center img').attr('src');
+			$('#homepage-gallery-full').attr('src',img);
+		},100);
+	});
 });
