@@ -1229,6 +1229,11 @@ This must be run when you have at least 2 sprites.
 	color: #fff;
 }
 
+.btn:focus {
+	color: #fff;
+	text-decoration: none;
+}
+
 .btn--calendar-icon:before {
 	content: "";
 	display: inline-block;
