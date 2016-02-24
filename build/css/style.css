@@ -2147,6 +2147,52 @@ This must be run when you have at least 2 sprites.
 	text-transform: none;
 }
 
+.single-room-card__slider .owl-nav {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 40%;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	font-size: 0;
+	width: 100%;
+}
+
+.single-room-card__slider .owl-prev {
+	position: absolute;
+	left: 30px;
+	background-image: url(../../img/sprite.png);
+	background-position: -223px -80px;
+	width: 20px;
+	height: 37px;
+}
+
+.single-room-card__slider .owl-next {
+	position: absolute;
+	right: 30px;
+	background-image: url(../../img/sprite.png);
+	background-position: -223px -43px;
+	width: 20px;
+	height: 37px;
+}
+
+.single-room-card__slide {
+	padding: 0;
+	position: relative;
+}
+
+.single-room-card__plus-icon {
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	z-index: 1;
+	background-image: url(../../img/sprite.png);
+	background-position: -223px -117px;
+	width: 22px;
+	height: 22px;
+}
+
 .single-room-card__description {
 	padding-top: 50px;
 	padding-bottom: 45px;
@@ -3159,6 +3205,11 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 	margin-bottom: 48px;
 }
 
+.single-room-card__slider .owl-nav {
+	display: block;
+	top: 50%;
+}
+
 .single-room-card__comfort-list {
 	-webkit-columns: 2;
 	-moz-columns: 2;
@@ -3889,9 +3940,9 @@ td.visible-lg {
 }
 
 .single-room-card__content {
-	display: -webkit-inline-flex;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 .single-room-card__slider {

@@ -3,7 +3,7 @@
 	padding-bottom: 50px;
 	&__content {
 		@media (min-width: @screen-md) {
-			display: inline-flex;
+			display: flex;
 		}
 	}
 	&__title {
@@ -36,7 +36,46 @@
 			padding: 0 15px;
 			order: 2;
 		}
+
+		& .owl-nav {
+			display: none;
+			position: absolute;
+			left: 0;
+			top: 40%;
+			transform: translate(0,-50%);
+			font-size: 0;
+			width: 100%;
+
+			@media (min-width: @screen-sm) {
+				display: block;
+				top: 50%;
+			}
+		}
+		& .owl-prev {
+			position: absolute;
+			left: 30px;
+			.sprite(@arrow-left);
+		}
+		& .owl-next {
+			position: absolute;
+			right: 30px;
+			.sprite(@arrow-right);
+		}
 	}
+	&__slide {
+		padding: 0;
+		position: relative;
+	}
+
+	&__plus-icon {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 25px;
+		z-index: 1;
+		.sprite(@plus-icon);
+	}
+
 	&__description {
 		padding-top: 50px;
 		padding-bottom: 45px;
