@@ -1425,7 +1425,7 @@ This must be run when you have at least 2 sprites.
 .logo__logo-icon {
 	display: block;
 	margin: 0 auto;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: 0px 0px;
 	width: 143px;
 	height: 49px;
@@ -1433,7 +1433,7 @@ This must be run when you have at least 2 sprites.
 
 .main-nav__hamburger {
 	display: block;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -155px -113px;
 	width: 29px;
 	height: 24px;
@@ -1516,7 +1516,7 @@ This must be run when you have at least 2 sprites.
 .btn--calendar-icon:before {
 	content: "";
 	display: inline-block;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -200px -113px;
 	width: 15px;
 	height: 16px;
@@ -1764,14 +1764,14 @@ This must be run when you have at least 2 sprites.
 }
 
 .review__social-links--vk {
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -99px -91px;
 	width: 22px;
 	height: 13px;
 }
 
 .review__social-links--fb {
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -82px -91px;
 	width: 17px;
 	height: 17px;
@@ -1885,7 +1885,7 @@ This must be run when you have at least 2 sprites.
 .location__bus:before {
 	content: "";
 	display: block;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: 0px -158px;
 	width: 50px;
 	height: 27px;
@@ -1909,7 +1909,7 @@ This must be run when you have at least 2 sprites.
 .location__train:before {
 	content: "";
 	display: block;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -97px -113px;
 	width: 58px;
 	height: 24px;
@@ -1996,21 +1996,21 @@ This must be run when you have at least 2 sprites.
 }
 
 .page-footer__social-link--vk {
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -223px -139px;
 	width: 20px;
 	height: 20px;
 }
 
 .page-footer__social-link--inst {
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -198px -62px;
 	width: 20px;
 	height: 20px;
 }
 
 .page-footer__social-link--fb {
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -223px -159px;
 	width: 20px;
 	height: 20px;
@@ -2165,7 +2165,7 @@ This must be run when you have at least 2 sprites.
 .single-room-card__slider .owl-prev {
 	position: absolute;
 	left: 30px;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -223px -80px;
 	width: 20px;
 	height: 37px;
@@ -2174,7 +2174,7 @@ This must be run when you have at least 2 sprites.
 .single-room-card__slider .owl-next {
 	position: absolute;
 	right: 30px;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -223px -43px;
 	width: 20px;
 	height: 37px;
@@ -2191,7 +2191,7 @@ This must be run when you have at least 2 sprites.
 	top: 20px;
 	right: 25px;
 	z-index: 1;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -223px -117px;
 	width: 22px;
 	height: 22px;
@@ -2468,7 +2468,7 @@ This must be run when you have at least 2 sprites.
 .booking-form__location-hotel--icon {
 	content: "";
 	display: block;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: 0px -49px;
 	width: 82px;
 	height: 64px;
@@ -2481,7 +2481,7 @@ This must be run when you have at least 2 sprites.
 .booking-form__location-hotel:after {
 	content: "";
 	display: block;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -121px -91px;
 	width: 16px;
 	height: 12px;
@@ -2503,7 +2503,7 @@ input:checked + .booking-form__location-hotel .booking-form__location-hotel--ico
 .booking-form__location-cottage--icon {
 	content: "";
 	display: block;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -143px 0px;
 	width: 80px;
 	height: 62px;
@@ -2516,7 +2516,7 @@ input:checked + .booking-form__location-hotel .booking-form__location-hotel--ico
 .booking-form__location-cottage:after {
 	content: "";
 	display: block;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -121px -91px;
 	width: 16px;
 	height: 12px;
@@ -2586,7 +2586,7 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 .booking-form__location-type-list label:after {
 	content: "";
 	display: block;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -121px -91px;
 	width: 16px;
 	height: 12px;
@@ -2653,35 +2653,35 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 }
 
 .booking-form__location-features-item--icon-area:before {
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: 0px -113px;
 	width: 45px;
 	height: 45px;
 }
 
 .booking-form__location-features-item--icon-room:before {
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -223px 0px;
 	width: 27px;
 	height: 43px;
 }
 
 .booking-form__location-features-item--icon-bed:before {
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -143px -62px;
 	width: 55px;
 	height: 43px;
 }
 
 .booking-form__location-features-item--icon-bath:before {
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -45px -113px;
 	width: 52px;
 	height: 28px;
 }
 
 .booking-form__location-features-item--icon-wifi:before {
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -82px -49px;
 	width: 50px;
 	height: 42px;
@@ -2712,7 +2712,7 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 	content: "";
 	display: block;
 	position: absolute;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -121px -91px;
 	width: 16px;
 	height: 12px;
@@ -2760,7 +2760,7 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 }
 
 .booking-form__payment-method-item input[type=radio]:checked + label:before {
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -121px -91px;
 	width: 16px;
 	height: 12px;
@@ -2778,7 +2778,7 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 .booking-form__payment-method-label:before {
 	content: "";
 	position: absolute;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -45px -141px;
 	width: 16px;
 	height: 12px;
@@ -2845,7 +2845,7 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 .booking-form .form-error:before {
 	content: "";
 	display: inline-block;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -61px -141px;
 	width: 13px;
 	height: 12px;
@@ -2859,7 +2859,7 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 
 .tooltip {
 	display: inline-block;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -184px -113px;
 	width: 16px;
 	height: 17px;
@@ -3304,7 +3304,7 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 
 .booking-form__location-type-list label:before {
 	display: block;
-	background-image: url(../../../img/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -198px -82px;
 	width: 19px;
 	height: 16px;
