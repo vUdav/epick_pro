@@ -114,7 +114,6 @@ $(document).ready(function() {
 	// homepage gallery
 	var homepageGallery = $('#homepage-gallery');
 	homepageGallery.owlCarousel({
-		items: 7,
 		nav: false,
 		dots: false,
 		loop: true,
@@ -127,7 +126,7 @@ $(document).ready(function() {
 				stagePadding: 0
 			},
 			1200: {
-				items: 7
+				items: 5
 			}
 		}
 	});

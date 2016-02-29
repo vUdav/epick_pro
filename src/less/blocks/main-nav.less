@@ -1,68 +1,70 @@
 .main-nav {
 
-	@media (min-width: @screen-md) {
-		margin-top: 3px;
-		position: static;
-	}
+  @media (min-width: @screen-md) {
+    margin-top: 3px;
+    position: static;
+  }
 
-	&__hamburger {
-		display: block;
-		.sprite(@burger);
-		position: absolute;
-		top: -30px;
-		right: 15px;
-	}
+  &__hamburger {
+    display: block;
+    .sprite(@burger);
+    position: absolute;
+    top: -30px;
+    right: 15px;
+  }
 
-	&__list {
-		list-style: none;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		padding: 0;
-		padding-top: 30px;
-		display: none;
-		&--active {
-			display: flex;
-			padding-top: 0;
-		}
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 30px;
+    display: none;
+    &--active {
+      display: flex;
+      padding-top: 0;
+    }
 
-		@media (min-width: @screen-md) {
-			flex-direction: row;
-			display: flex;
-			padding-top: 0;
-		}
-	}
+    @media (min-width: @screen-md) {
+      flex-direction: row;
+      display: inline-flex;
+      padding-top: 0;
+    }
+  }
 
-	&__item {
-		border-top: 1px solid #eee;
-		&:last-child {
-			border-bottom: 1px solid #eee;
-		}
+  &__item {
+    border-top: 1px solid #eee;
+    &:last-child {
+      border-bottom: 1px solid #eee;
+    }
 
-		@media (min-width: @screen-md) {
-			border-top: 0;
-			&:last-child {
-				border-bottom: 0;
-			}
-		}
+    @media (min-width: @screen-md) {
+      border-top: 0;
+      margin-right: 15px;
+      &:last-child {
+        border-bottom: 0;
+        margin-right: 0;
+      }
+    }
 
-		a {
-			padding: 10px 0;
-			display: block;
-			font-size: 14px;
+    a {
+      padding: 10px 0;
+      display: block;
+      font-size: 14px;
 
-			@media (min-width: @screen-md) {
-				padding: 0;
-			}
-		}
-	}
+      @media (min-width: @screen-md) {
+        padding: 0;
+      }
+    }
+  }
 
-	&__link {
-		text-transform: uppercase;
-		color: @gray-base;
-		&:hover, &--active {
-			color: @orange-color;
-			text-decoration: none;
-		}
-	}
+  &__link {
+    text-transform: uppercase;
+    color: @gray-base;
+    &:hover, &--active {
+      color: @orange-color;
+      text-decoration: none;
+    }
+  }
 }
