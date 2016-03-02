@@ -1,0 +1,24 @@
+{
+  "name": "project",
+  "description": "",
+  "main": "",
+  "authors": [
+    "vUdav <v.udav@bk.ru>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/vUdav/epixx-green-valley",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fancybox": "^2.1.5",
+    "owl.carousel": "owl-carousel2#^2.0.0-beta.3",
+    "bootstrap": "^3.3.6",
+    "form-validator": "^1.1.0"
+  }
+}
