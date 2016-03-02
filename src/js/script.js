@@ -137,7 +137,13 @@ $(document).ready(function() {
 	homepageGallery.on('changed.owl.carousel',function(){
 		setTimeout(function(){
 			var img = homepageGallery.find('.owl-item.center img').attr('src');
+			var title = homepageGallery.find('.owl-item.center img').data('title');
+			var text = homepageGallery.find('.owl-item.center img').data('text');
+			var link = homepageGallery.find('.owl-item.center img').data('link');
 			$('#homepage-gallery-full').attr('src',img);
+			$('#homepage-gallery-description .gallery__description-title').text(title);
+			$('#homepage-gallery-description .gallery__description-text').text(text);
+			$('#homepage-gallery-description .gallery__description-link').attr('href',link);
 		},100);
 	});
 });

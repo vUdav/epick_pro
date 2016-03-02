@@ -2894,6 +2894,72 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 	padding-bottom: 40px;
 }
 
+.gallery__main {
+	position: relative;
+}
+
+.gallery__main:hover .gallery__description {
+	opacity: 1;
+}
+
+.gallery__description {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(25, 25, 25, 0.65);
+	color: #fff;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	opacity: 0;
+	transition: .2s opacity;
+}
+
+.gallery__description-title {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	line-height: 1;
+}
+
+.gallery__description-text {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 0;
+}
+
+.gallery__description-link {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgba(10, 184, 157, 0.5);
+	color: #fff;
+	text-transform: uppercase;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.gallery__description-link:hover {
+	background-color: rgba(10, 184, 157, 0.7);
+	text-decoration: none;
+	color: #fff;
+}
+
 .gallery__thumbs img {
 	cursor: pointer;
 }
