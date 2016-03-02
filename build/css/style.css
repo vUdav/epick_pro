@@ -1791,6 +1791,35 @@ This must be run when you have at least 2 sprites.
 	text-align: center;
 }
 
+.review .owl-nav {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	font-size: 0;
+	width: 100%;
+}
+
+.review .owl-prev {
+	background-image: url(../img/sprite.png);
+	background-position: -223px -80px;
+	width: 20px;
+	height: 37px;
+	float: left;
+	position: relative;
+	left: -30px;
+}
+
+.review .owl-next {
+	background-image: url(../img/sprite.png);
+	background-position: -223px -43px;
+	width: 20px;
+	height: 37px;
+	float: right;
+	position: relative;
+	right: -30px;
+}
+
 .offers {
 	padding-top: 50px;
 	padding-bottom: 50px;

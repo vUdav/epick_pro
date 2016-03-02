@@ -68,4 +68,26 @@
 	&__btn {
 		text-align: center;
 	}
+
+	.owl-nav {
+		position: absolute;
+		top: 50%;
+		transform: translate(0,-50%);
+		font-size: 0;
+		width: 100%;
+	}
+
+	.owl-prev {
+		.sprite(@arrow-left);
+		float: left;
+		position: relative;
+		left: -30px;
+	}
+
+	.owl-next {
+		.sprite(@arrow-right);
+		float: right;
+		position: relative;
+		right: -30px;
+	}
 }
