@@ -4,9 +4,11 @@
 	&__thumbs {
 		img {
 			cursor: pointer;
-			&:hover {
-				opacity: .8;
+			@media (min-width: @screen-md) {
+					&:hover {
+						opacity: .8;
+					}
+				}
 			}
-		}
 	}
 }

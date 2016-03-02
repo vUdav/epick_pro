@@ -137,24 +137,24 @@ $(document).ready(function() {
 	});
 
 	// form valid
-	$.validate({
-		form: '#booking-form',
-		scrollToTopOnError : false,
-		errorMessagePosition : $('#booking-form__payment-result-message')
-	});
-	$('#payment-method-now').on('change',function(){
-		if ($(this).prop("checked")) {
-			$('#payment-method-now-card-number').attr('data-validation','number');
-			$('#payment-method-now-card-cvv').attr('data-validation','number');
-			$('#payment-method-now-card-name').attr('data-validation','required');
-			$('#payment-method-now-card-date').attr('data-validation','required');
-		} else {
-			$('#payment-method-now-card-number').removeAttr('data-validation');
-			$('#payment-method-now-card-cvv').removeAttr('data-validation');
-			$('#payment-method-now-card-name').removeAttr('data-validation');
-			$('#payment-method-now-card-date').removeAttr('data-validation');
-		}
-	});
+	// $.validate({
+	// 	form: '#booking-form',
+	// 	scrollToTopOnError : false,
+	// 	errorMessagePosition : $('#booking-form__payment-result-message')
+	// });
+	// $('#payment-method-now').on('change',function(){
+	// 	if ($(this).prop("checked")) {
+	// 		$('#payment-method-now-card-number').attr('data-validation','number');
+	// 		$('#payment-method-now-card-cvv').attr('data-validation','number');
+	// 		$('#payment-method-now-card-name').attr('data-validation','required');
+	// 		$('#payment-method-now-card-date').attr('data-validation','required');
+	// 	} else {
+	// 		$('#payment-method-now-card-number').removeAttr('data-validation');
+	// 		$('#payment-method-now-card-cvv').removeAttr('data-validation');
+	// 		$('#payment-method-now-card-name').removeAttr('data-validation');
+	// 		$('#payment-method-now-card-date').removeAttr('data-validation');
+	// 	}
+	// });
 
 	// single room gallery
 	$('#single-room__gallery').owlCarousel({
@@ -167,7 +167,6 @@ $(document).ready(function() {
 	// homepage gallery
 	var homepageGallery = $('#homepage-gallery');
 	homepageGallery.owlCarousel({
-		items: 7,
 		nav: false,
 		dots: false,
 		loop: true,
@@ -180,7 +179,7 @@ $(document).ready(function() {
 				stagePadding: 0
 			},
 			1200: {
-				items: 7
+				items: 5
 			}
 		}
 	});

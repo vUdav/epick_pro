@@ -1418,8 +1418,13 @@ This must be run when you have at least 2 sprites.
 	font-size: 18px;
 }
 
-.page-header .btn {
+.page-header__booking {
+	padding: 0;
+}
+
+.page-header__booking .btn {
 	margin-top: 11px;
+	float: right;
 }
 
 .logo__logo-icon {
@@ -1498,8 +1503,9 @@ This must be run when you have at least 2 sprites.
 	text-transform: uppercase;
 	font-size: 14px;
 	border-radius: 20px;
-	padding: 7px 28px;
+	padding: 7px 20px 6px;
 	border: 0;
+	font-weight: 500;
 }
 
 .btn:hover {
@@ -1572,7 +1578,6 @@ This must be run when you have at least 2 sprites.
 
 .promo__slide {
 	background-size: cover;
-	background-position-x: 50%;
 	height: 100%;
 	padding-top: 19px;
 }
@@ -1654,7 +1659,7 @@ This must be run when you have at least 2 sprites.
 	text-align: center;
 	padding: 0;
 	margin-top: 0;
-	margin-bottom: 58px;
+	margin-bottom: 78px;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -2889,6 +2894,10 @@ input:checked + .booking-form__location-cottage .booking-form__location-cottage-
 	padding-bottom: 40px;
 }
 
+.gallery__thumbs img {
+	cursor: pointer;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
 
 #fancybox-loading,
@@ -3891,18 +3900,20 @@ td.visible-lg {
 	-webkit-flex-direction: row;
 	-ms-flex-direction: row;
 	flex-direction: row;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
 	padding-top: 0;
 }
 
 .main-nav__item {
 	border-top: 0;
+	margin-right: 15px;
 }
 
 .main-nav__item:last-child {
 	border-bottom: 0;
+	margin-right: 0;
 }
 
 .main-nav__item a {
@@ -3915,6 +3926,7 @@ td.visible-lg {
 
 .promo__slide {
 	padding-top: 100px;
+	background-position-x: 50%;
 }
 
 .offers__title {
@@ -4031,6 +4043,10 @@ td.visible-lg {
 
 .booking-form__payment-result-inner {
 	width: 780px;
+}
+
+.gallery__thumbs img:hover {
+	opacity: .8;
 }
 
 }
