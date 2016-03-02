@@ -4048,6 +4048,18 @@ td.visible-lg {
 	font-size: 14px;
 }
 
+.location {
+	padding-bottom: 70px;
+}
+
+.location__bus {
+	padding-top: 0;
+}
+
+.location__train {
+	padding-top: 0;
+}
+
 .location__transport-text {
 	text-align: left;
 }

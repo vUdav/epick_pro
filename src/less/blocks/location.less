@@ -1,5 +1,10 @@
 .location {
 	padding-bottom: 20px;
+
+	@media (min-width: @screen-md) {
+		padding-bottom: 70px;
+	}
+
 	&__title {
 		font-size: 26px;
 		text-align: center;
@@ -28,6 +33,10 @@
 			margin: 0 auto;
 			margin-bottom: 22px;
 		}
+
+		@media (min-width: @screen-md) {
+			padding-top: 0;
+		}
 	}
 	&__transport-title {
 		font-family: @font-family-sans-serif;
@@ -45,6 +54,10 @@
 			.sprite(@train-icon);
 			margin: 0 auto;
 			margin-bottom: 22px;
+		}
+
+		@media (min-width: @screen-md) {
+			padding-top: 0;
 		}
 	}
 	&__transport-text {
