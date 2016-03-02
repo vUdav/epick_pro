@@ -18,7 +18,9 @@
   "dependencies": {
     "fancybox": "^2.1.5",
     "owl.carousel": "owl-carousel2#^2.0.0-beta.3",
-    "bootstrap": "^3.3.6",
-    "form-validator": "^1.1.0"
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {
+    "jquery-form-validator": "^2.2.81"
   }
 }
