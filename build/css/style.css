@@ -4024,6 +4024,10 @@ td.visible-lg {
 	background-position-x: 50%;
 }
 
+.review__title {
+	font-size: 30px;
+}
+
 .offers__title {
 	font-size: 30px;
 }
