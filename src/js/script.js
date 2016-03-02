@@ -92,10 +92,13 @@ $(document).ready(function() {
 	$.validate({
 		form: '#booking-form',
 		scrollToTopOnError : false,
-		errorMessagePosition : $('#booking-form__payment-result-message')
+		errorMessagePosition : $('#booking-form__payment-result-message'),
+		// errorMessagePosition: 'top',
+		validateOnBlur : false,
+		addSuggestions : false
 	});
-	$('#payment-method-now').on('change',function(){
-		if ($(this).prop("checked")) {
+	$('#payment-method-now, #payment-method-inplace').change(function(){
+		if ($('#payment-method-now').prop("checked")) {
 			$('#payment-method-now-card-number').attr('data-validation','number');
 			$('#payment-method-now-card-cvv').attr('data-validation','number');
 			$('#payment-method-now-card-name').attr('data-validation','required');
