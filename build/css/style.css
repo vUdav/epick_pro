@@ -1539,9 +1539,9 @@ This must be run when you have at least 2 sprites.
 }
 
 .btn--bordered:hover {
-	background-color: transparent;
-	color: #e6e6e6;
-	border-color: #e6e6e6;
+	background-color: #fff;
+	color: #0ab89d;
+	border-color: #fff;
 }
 
 .btn--more {
