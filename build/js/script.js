@@ -83,14 +83,19 @@ $(document).ready(function() {
 		autoplay: true,
 		autoplayTimeout: 3000,
 		autoplayHoverPause: true,
-		nav: true,
 		dots: false,
 		responsive: {
 			0: {
-				items: 1
+				items: 1,
+				nav: false
 			},
 			768: {
-				items: 2
+				items: 2,
+				nav: false
+			},
+			1200: {
+				items: 2,
+				nav: true
 			}
 		}
 	});
